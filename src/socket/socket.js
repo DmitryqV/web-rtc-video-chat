@@ -1,7 +1,7 @@
 import { io } from 'socket.io-client';
 
 
-const socket = io('http://localhost:3001/', {
+const socket = io('/', {
   forceNew: true,
   reconnectionAttempts: "Infinity",
   timeout : 1000, 
