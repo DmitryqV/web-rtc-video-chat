@@ -19,7 +19,7 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start-dev-server": "npx nodemon server.js",
+    "start": "npx nodemon server.js",
     "start-app": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
