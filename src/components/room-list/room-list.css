@@ -1,0 +1,73 @@
+.room-list {
+  display: inline-block;
+  width: 320px;
+  height: 100vh;
+  background: #F4F4F4;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.room-list__title {
+  width: 150px;
+  height: 37px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.38);
+  margin: 23px 58px;
+}
+
+.room-list__item {
+  cursor: pointer;
+  width: 300px;
+  height: 60px;
+  margin-left: 10px;
+  margin-top: 19px;
+  border-bottom: 6px solid #E5E5E5;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.room-list__item-avatar {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 6px;
+  border-radius: 50%;
+  color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.room-list__item-title{ 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  max-width: 230px;
+  display: block;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.room-list__item-content{
+  display: flex;
+  align-items: center;
+  gap: 21px;
+}
+
+.room-list__item:hover .room-list__item-title {
+  color: rgb(0, 0, 0);
+}
+
+.room-list__item:hover .room-list__item-avatar {
+  color: #15C7FF;
+  background-color: #fff;
+}
+
+.room-list__item:hover {
+  border-bottom: 6px solid #15C7FF;
+}

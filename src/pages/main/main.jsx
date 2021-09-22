@@ -1,39 +1,12 @@
-import actions from "../../socket/socket-events";
-import { useEffect, useState } from "react";
 import { useHistory } from "react-router";
-import socket from "../../socket/socket";
+import { RoomList } from "../../components/room-list/room-list";
 import { v4 } from "uuid";
 
-export const MainPage = () => {
-  const [rooms, updateRooms] = useState([]);
+export const MainPage = ({rooms}) => {
   const history = useHistory();
-
-  useEffect(() => {
-    socket.on(actions.share, ({rooms} = []) => {
-      if (rooms !== []) {
-        updateRooms(rooms);
-      }
-      console.log(rooms);
-    });
-  }, []);
-
   return (
     <>
-      <h1> List rooms </h1>
-      <ul>
-        {rooms.map(roomID => {
-          return (
-            <li key={roomID}>
-              {roomID}
-                <button onClick={() => {
-                  history.push("/room/" + roomID);
-                }}>
-                  Join
-                </button>
-            </li>
-          )
-        })}
-      </ul>
+      <RoomList rooms={rooms} />
       <button onClick={() => {
         history.push('/room/' + v4())
       }}>
