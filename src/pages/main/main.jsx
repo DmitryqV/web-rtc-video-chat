@@ -1,17 +1,20 @@
+import actions from "../../socket/socket-events";
 import { useEffect, useState } from "react";
 import { useHistory } from "react-router";
-import { socket } from "../../socket/socket";
-import actions from "../../socket/socket-events";
-import {v4} from "uuid";
+import socket from "../../socket/socket";
+import { v4 } from "uuid";
 
 export const MainPage = () => {
-  const history = useHistory();
   const [rooms, updateRooms] = useState([]);
+  const history = useHistory();
+
   useEffect(() => {
-    socket.on(actions.share, ({rooms = []} = {}) => {
-      updateRooms(rooms);
+    socket.on(actions.share, (data) => {
+      updateRooms(data);
+      console.log(data);
     });
   }, []);
+
   return (
     <>
       <h1> List rooms </h1>

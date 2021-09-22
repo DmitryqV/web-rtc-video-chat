@@ -4,6 +4,7 @@ const app = express();
 const server = require('http').createServer(app);
 const io = require('socket.io')(server);
 const port = process.env.PORT || 3001;
+const ip = "192.168.50.228";
 const actions = require('./src/socket/socket-events');
 
 const usersRooms = ( ) => {
@@ -12,7 +13,10 @@ const usersRooms = ( ) => {
 };
 
 const shareRooms = ( ) => {
-  io.emit(actions.share, {rooms: usersRooms()});
+  console.log("rooms shared");
+  io.emit("share", {
+    rooms: usersRooms()
+  });
 };
 
 const leaveRoom = ( socket ) => {
@@ -29,10 +33,13 @@ const leaveRoom = ( socket ) => {
     socket.leave(roomID);
   });
   shareRooms();
+  console.log("user disconnected, socket id: " + socket.id);
 };
 
 io.on('connection', (socket) => {
   shareRooms();
+
+  console.log("user connected, socket id: " + socket.id);
 
   socket.on(actions.join, (config)=> {
     const {room: roomID} = config;
@@ -50,7 +57,7 @@ io.on('connection', (socket) => {
         });
       });
       socket.join(roomID);
-      shareRooms();
+      console.log(usersRooms());
     }; 
   });
   socket.on(actions.leave, () => leaveRoom(socket));
@@ -58,6 +65,6 @@ io.on('connection', (socket) => {
 });
 
 
-server.listen(port, ()=> {
-  console.log('http://localhost:' + port);
+server.listen(port, ip, ()=> {
+  console.log('Server stated: http://localhost:' + port);
 });
