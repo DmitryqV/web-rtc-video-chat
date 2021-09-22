@@ -10,9 +10,6 @@ export const MainPage = () => {
 
   useEffect(() => {
     socket.on(actions.share, (data = []) => {
-      if (data !== []) {
-        updateRooms(data);
-      }
       console.log(data);
     });
   }, []);
