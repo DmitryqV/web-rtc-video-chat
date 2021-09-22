@@ -2,7 +2,7 @@ import { io } from 'socket.io-client';
 
 
 const socket = io('/', {
-  "forceNew": true,
+  forceNew: true,
   reconnectionAttempts: "Infinity",
   timeout : 1000, 
   transports : ["websocket"],

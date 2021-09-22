@@ -1,10 +1,11 @@
+const actions = require('./src/socket/socket-events');
 const express = require('express');
 const path = require('path');
 const app = express();
 const server = require('http').createServer(app);
 const io = require('socket.io')(server);
 const port = process.env.PORT || 3001;
-const actions = require('./src/socket/socket-events');
+
 app.use(express.static('build'));
 app.get('*', (res,req) => {
   req.sendFile(path.resolve(__dirname, 'build', 'index.html'));
@@ -26,12 +27,8 @@ const leaveRoom = ( socket ) => {
   const {rooms} =  socket;
   rooms.forEach((roomID) => {
     Array.from(io.sockets.adapter.rooms.get(roomID) || []).forEach((clientID) => {
-      io.to(clientID).emit(actions.removePeer,{
-        peerID: socket.id,
-      });
-      socket.emit(actions.removePeer, {
-        peerID: clientID
-      });
+      io.to(clientID).emit(actions.removePeer,{ peerID: socket.id });
+      socket.emit(actions.removePeer, { peerID: clientID });
     });
     socket.leave(roomID);
   });
