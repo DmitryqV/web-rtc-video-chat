@@ -9,10 +9,10 @@ export const MainPage = () => {
   const history = useHistory();
 
   useEffect(() => {
-    socket.on("connect", () => console.log(socket));
-    socket.on("share", (data) => {
+    socket.on(actions.share, (data) => {
+      updateRooms(data);
       console.log(data);
-    })
+    });
   }, []);
 
   return (
