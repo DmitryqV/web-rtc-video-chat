@@ -9,8 +9,10 @@ export const MainPage = () => {
   const history = useHistory();
 
   useEffect(() => {
-    socket.on(actions.share, (data) => {
-      updateRooms(data);
+    socket.on(actions.share, (data = []) => {
+      if (data !== []) {
+        updateRooms(data);
+      }
       console.log(data);
     });
   }, []);
