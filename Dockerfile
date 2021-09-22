@@ -9,4 +9,6 @@ COPY . .
 
 RUN npm install
 
-CMD ["npm", "npx nodemon server.js", "react-scripts start"]
+RUN npm run build
+
+CMD ["npm", "npx nodemon server.js"]
