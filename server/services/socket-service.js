@@ -46,6 +46,6 @@ module.exports = (io) => {
     });
 
     socket.on(actions.leave, () => leaveRoom(socket));
-    socket.on('diconnecting', () => leaveRoom(socket));
+    socket.on('disconnect', () => leaveRoom(socket));
   });
 };
