@@ -3,7 +3,7 @@ const path = require('path');
 const app = express();
 const server = require('http').createServer(app);
 const io = require('socket.io')(server);
-const ip = "https://webrtc-app-video-chat-full.herokuapp.com";
+const port = process.env.PORT || 3001;
 const actions = require('./src/socket/socket-events');
 app.use(express.static('build'));
 app.get('*', (res,req) => {
@@ -68,6 +68,6 @@ io.on('connection', (socket) => {
 });
 
 
-server.listen(ip, ()=> {
-  console.log('Server stated: ' + ip);
+server.listen(port, ()=> {
+  console.log('Server stated: ' + port);
 });
