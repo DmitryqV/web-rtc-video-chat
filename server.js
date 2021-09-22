@@ -12,7 +12,9 @@ const usersRooms = ( ) => {
 };
 
 const shareRooms = ( ) => {
-  io.emit(actions.share, {rooms: usersRooms()});
+  io.emit("share", {
+    rooms: usersRooms()
+  });
 };
 
 const leaveRoom = ( socket ) => {
@@ -29,11 +31,14 @@ const leaveRoom = ( socket ) => {
     socket.leave(roomID);
   });
   shareRooms();
+  console.log("disconnect");
 };
 
 io.on('connection', (socket) => {
   shareRooms();
 
+  console.log(socket);
+  
   socket.on(actions.join, (config)=> {
     const {room: roomID} = config;
     const {rooms: joinedRooms} =  socket;
@@ -50,7 +55,7 @@ io.on('connection', (socket) => {
         });
       });
       socket.join(roomID);
-      shareRooms();
+      console.log(usersRooms());
     }; 
   });
   socket.on(actions.leave, () => leaveRoom(socket));

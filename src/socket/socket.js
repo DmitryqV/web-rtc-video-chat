@@ -1,8 +1,13 @@
-import {io} from 'socket.io-client';
+import socketIOClient from 'socket.io-client';
 
-export const socket = io('http://192.168.43.8:3001', {
-  "forceNew": true,
+
+const socket = socketIOClient('10.1.0.248:3001/', {
+  forceNew: true,
   reconnectionAttempts: "Infinity",
-  timeout: 10000,
-  transports: ['websocket']
+  timeout : 1000, 
+  transports : ["websocket"],
 });
+
+socket.on("connect", () => {  console.log(socket.id);});
+
+export default socket;
