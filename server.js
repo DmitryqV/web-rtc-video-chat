@@ -17,7 +17,7 @@ const usersRooms = ( ) => {
 
 const shareRooms = ( ) => {
   console.log("rooms shared");
-  io.emit("share", {
+  io.emit(actions.share, {
     rooms: usersRooms()
   });
 };
