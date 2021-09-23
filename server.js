@@ -13,11 +13,11 @@ try {
 } catch (e) {
   logger.error('socket services not loaded!');
 }
-
+process.env.NODE_ENV = 'production'
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('build'));
-  app.get('*', (res,req) => {
+  app.get('*', (res, req) => {
     try {
       req.sendStatus(200).sendFile(path.resolve(__dirname, 'build', 'index.html'));
       logger.info('build succeeded');
