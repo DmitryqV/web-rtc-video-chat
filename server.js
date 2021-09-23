@@ -8,10 +8,11 @@ require('./server/services/socket-service')(
   require('socket.io')(server)
 );
 
-app.use(express.static('build'));
-
-app.get('*', (res,req) => {
-  req.sendFile(path.resolve(__dirname, 'build', 'index.html'));
-});
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static('build'));
+  app.get('*', (res,req) => {
+    req.sendFile(path.resolve(__dirname, 'build', 'index.html'));
+  });
+}
 
 server.listen(port, () => console.log('Server stated: ' + port));
