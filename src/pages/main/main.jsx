@@ -7,9 +7,7 @@ export const MainPage = ({rooms}) => {
   return (
     <>
       <RoomList rooms={rooms} />
-      <button onClick={() => {
-        history.push('/room/' + v4())
-      }}>
+      <button onClick={() => history.push('/room/' + v4())}>
         create
       </button>
     </>
