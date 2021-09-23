@@ -11,7 +11,7 @@ try {
   );
   logger.info('socket services loaded');
 } catch (e) {
-  logger.error('socket services error!');
+  logger.error('socket services not loaded!');
 }
 
 
