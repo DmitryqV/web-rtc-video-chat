@@ -2,13 +2,13 @@ const actions = require('../../src/socket/socket-events');
 
 module.exports = (io) => {
   const getRooms = () => {
-    logger.info('getting current room sessions');
+    logger.info('getting current rooms sessions');
     return Array.from(io.sockets.adapter.rooms.keys());
   };
 
   const shareRooms = () => {
-    logger.info('sending open rooms sessions');
     io.emit(actions.share, { rooms: getRooms() });
+    logger.info('sending open rooms sessions');
   };
 
   const leaveRoom = (socket) => {
@@ -16,11 +16,11 @@ module.exports = (io) => {
 
     rooms.forEach((roomID) => {
       Array.from(io.sockets.adapter.rooms.get(roomID) || []).forEach((clientID) => {
-        io.to(clientID).emit(actions.removePeer, { 
-          peerID: socket.id 
+        io.to(clientID).emit(actions.removePeer, {
+          peerID: socket.id
         });
-        socket.emit(actions.removePeer, { 
-          peerID: clientID 
+        socket.emit(actions.removePeer, {
+          peerID: clientID
         });
       });
       logger.info(`the user: ${socket.id} has left the room: ${roomID}`);
@@ -30,22 +30,22 @@ module.exports = (io) => {
   };
 
   io.on('connection', (socket) => {
-    logger.info("user connected, socket id: " + socket.id);
+    logger.info(`the user: ${socket.id} has connected`);
     shareRooms();
 
     socket.on(actions.join, (config) => {
       const { rooms: joinedRooms } = socket;
       const { room: roomID } = config;
-      
+
       if (!Array.from(joinedRooms).includes(roomID)) {
         Array.from(io.sockets.adapter.rooms.get(roomID) || []).forEach((clientID) => {
-          io.to(clientID).emit(actions.addPeer, { 
-            peerID: socket.id, 
-            createOffer: false 
+          io.to(clientID).emit(actions.addPeer, {
+            peerID: socket.id,
+            createOffer: false
           });
-          socket.emit(actions.addPeer, { 
-            peerID: clientID, 
-            createOffer: true 
+          socket.emit(actions.addPeer, {
+            peerID: clientID,
+            createOffer: true
           });
         });
         socket.join(roomID);
@@ -55,6 +55,9 @@ module.exports = (io) => {
     });
 
     socket.on(actions.leave, () => leaveRoom(socket));
-    socket.on('disconnect', () => leaveRoom(socket));
+    socket.on('disconnect', () => {
+      leaveRoom(socket);
+      logger.info(`the user: ${socket.id} has disconnecting`);
+    });
   });
 };
