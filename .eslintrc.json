@@ -20,7 +20,10 @@
     "@typescript-eslint"
   ],
   "rules": {
-    "arrow-spacing": "error",
+    "object-curly-spacing": [
+      1,
+      "always"
+    ],
     "arrow-parens": "error",
     "comma-dangle": "off",
     "complexity": "warn",
