@@ -3,7 +3,7 @@ const path = require('path');
 const logger = require('./server/log/logger');
 const app = express();
 const server = require('http').createServer(app);
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3333;
 
 try {
   require('./server/services/socket-service')(

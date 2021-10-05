@@ -5,7 +5,7 @@ import { IRooms } from '../../myInterfaces';
 import { v4 } from 'uuid';
 
 export const MainPage: FC<IRooms> = ({ rooms }) => {
-  const history = useHistory();
+  const history = useHistory<unknown>();
   return (
     <>
       <RoomList rooms={rooms} />
