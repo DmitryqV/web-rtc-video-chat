@@ -9,7 +9,7 @@ export const RoomList: FC<IRooms> = ({ rooms }) => {
     <section className='room-list'>
       <h1 className='room-list__title'> Room list </h1>
       {
-        rooms !== undefined ?? rooms.map((roomID: string) => {
+        rooms !== undefined && rooms.map((roomID: string) => {
           return (
             <div className='room-list__item' key={roomID} onClick={() => {
               history.push('/room/' + roomID);
