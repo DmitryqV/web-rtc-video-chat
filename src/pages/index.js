@@ -1,3 +1,3 @@
-export { MainPage } from './main/main';
-export { RoomPage } from './room/room';
-export { NotFoundPage } from './notfound/notfound';
+export { MainPage } from './main/main.tsx';
+export { RoomPage } from './room/room.tsx';
+export { NotFoundPage } from './notfound/notfound.tsx';
