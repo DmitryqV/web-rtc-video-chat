@@ -1,15 +1,15 @@
 import actions from './socket/socket-events';
-import socket from './socket/socket';
-import React, { useEffect, useState } from 'react';
+import { socket } from './socket/socket';
+import React, { FC, useEffect, useState } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { MainPage, RoomPage, NotFoundPage } from './pages/index';
-
-const App = () => {
-  const [rooms, updateRooms] = useState([]);
+import { IRooms } from './myInterfaces';
+const App: FC = () => {
+  const [rooms, updateRooms] = useState<string[]>();
 
   useEffect(() => {
-    socket.on(actions.share, ({ rooms } = []) => {
-      if (rooms !== []) updateRooms(rooms);
+    socket.on(actions.share, ({ rooms }: IRooms) => {
+      if (rooms !== undefined) updateRooms(rooms);
     });
   }, [rooms]);
 
@@ -24,4 +24,4 @@ const App = () => {
   );
 };
 
-export default App;
+export { App };
