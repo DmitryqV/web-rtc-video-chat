@@ -1,0 +1,72 @@
+[2021-10-09T01:02:51.094] [INFO] default - socket services loaded
+[2021-10-09T01:02:51.097] [INFO] default - server stated, port: 3001
+[2021-10-09T01:04:27.592] [INFO] default - socket services loaded
+[2021-10-09T01:04:27.595] [INFO] default - server stated, port: 3001
+[2021-10-09T01:05:33.747] [INFO] default - socket services loaded
+[2021-10-09T01:05:33.750] [INFO] default - server stated, port: 3001
+[2021-10-09T01:06:08.911] [INFO] default - the user: pJuwvcWpFayPJkbOAAAB has connected
+[2021-10-09T01:06:08.912] [INFO] default - getting current rooms sessions
+[2021-10-09T01:06:08.913] [INFO] default - sending open rooms sessions
+[2021-10-09T01:07:03.494] [INFO] default - socket services loaded
+[2021-10-09T01:07:03.497] [INFO] default - server stated, port: 3001
+[2021-10-09T01:07:04.153] [INFO] default - the user: 6o7EU_JF5Gk8tohAAAAB has connected
+[2021-10-09T01:07:04.154] [INFO] default - getting current rooms sessions
+[2021-10-09T01:07:04.154] [INFO] default - sending open rooms sessions
+[2021-10-09T01:07:20.460] [INFO] default - socket services loaded
+[2021-10-09T01:07:20.465] [INFO] default - server stated, port: 3001
+[2021-10-09T01:07:24.764] [INFO] default - the user: wc-FpcwUJ1ZJWQRPAAAB has connected
+[2021-10-09T01:07:24.764] [INFO] default - getting current rooms sessions
+[2021-10-09T01:07:24.765] [INFO] default - sending open rooms sessions
+[2021-10-09T01:10:59.754] [ERROR] default - socket services not loaded! [96mserver/services/socket-service.ts[0m:[93m8[0m:[93m63[0m - [91merror[0m[90m TS2769: [0mNo overload matches this call.
+  Overload 1 of 2, '(predicate: (value: unknown, index: number, array: unknown[]) => value is unknown, thisArg?: any): unknown[]', gave the following error.
+    Argument of type '(roomID: string) => any' is not assignable to parameter of type '(value: unknown, index: number, array: unknown[]) => value is unknown'.
+      Types of parameters 'roomID' and 'value' are incompatible.
+        Type 'unknown' is not assignable to type 'string'.
+  Overload 2 of 2, '(predicate: (value: unknown, index: number, array: unknown[]) => unknown, thisArg?: any): unknown[]', gave the following error.
+    Argument of type '(roomID: string) => any' is not assignable to parameter of type '(value: unknown, index: number, array: unknown[]) => unknown'.
+      Types of parameters 'roomID' and 'value' are incompatible.
+        Type 'unknown' is not assignable to type 'string'.
+
+[7m8[0m     return Array.from(io.sockets.adapter.rooms.keys()).filter((roomID: string) => validate(roomID));
+[7m [0m [91m                                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[2021-10-09T01:10:59.757] [INFO] default - server stated, port: 3001
+[2021-10-09T01:11:04.785] [INFO] default - socket services loaded
+[2021-10-09T01:11:04.789] [INFO] default - server stated, port: 3001
+[2021-10-09T01:11:07.578] [INFO] default - the user: ZK7oEwh5TGSsea68AAAB has connected
+[2021-10-09T01:11:07.579] [INFO] default - getting current rooms sessions
+[2021-10-09T01:11:07.580] [INFO] default - sending open rooms sessions
+[2021-10-09T01:13:01.357] [INFO] default - socket services loaded
+[2021-10-09T01:13:01.360] [INFO] default - server stated, port: 3001
+[2021-10-09T01:13:01.540] [INFO] default - the user: ckrEmt1uITDPQolNAAAB has connected
+[2021-10-09T01:13:01.540] [INFO] default - getting current rooms sessions
+[2021-10-09T01:13:01.541] [INFO] default - sending open rooms sessions
+[2021-10-09T01:13:16.211] [INFO] default - socket services loaded
+[2021-10-09T01:13:16.214] [INFO] default - server stated, port: 3001
+[2021-10-09T01:13:20.766] [INFO] default - the user: zeMlBJTFvulV7i7JAAAB has connected
+[2021-10-09T01:13:20.766] [INFO] default - getting current rooms sessions
+[2021-10-09T01:13:20.768] [INFO] default - sending open rooms sessions
+[2021-10-09T01:13:31.898] [INFO] default - getting current rooms sessions
+[2021-10-09T01:13:31.898] [INFO] default - sending open rooms sessions
+[2021-10-09T01:13:31.899] [INFO] default - the user: zeMlBJTFvulV7i7JAAAB has disconnecting
+[2021-10-09T01:13:32.378] [INFO] default - the user: kPVKdTTXalxwcgIQAAAD has connected
+[2021-10-09T01:13:32.378] [INFO] default - getting current rooms sessions
+[2021-10-09T01:13:32.379] [INFO] default - sending open rooms sessions
+[2021-10-09T01:13:44.260] [INFO] default - getting current rooms sessions
+[2021-10-09T01:13:44.260] [INFO] default - sending open rooms sessions
+[2021-10-09T01:13:44.260] [INFO] default - the user: kPVKdTTXalxwcgIQAAAD has disconnecting
+[2021-10-09T01:13:44.773] [INFO] default - the user: Lrjv8zR44DfIPynwAAAF has connected
+[2021-10-09T01:13:44.774] [INFO] default - getting current rooms sessions
+[2021-10-09T01:13:44.774] [INFO] default - sending open rooms sessions
+[2021-10-09T01:16:02.044] [INFO] default - socket services loaded
+[2021-10-09T01:16:02.048] [INFO] default - server stated, port: 3001
+[2021-10-09T01:16:06.896] [INFO] default - the user: lB4zTm4KmqL0Be0oAAAB has connected
+[2021-10-09T01:16:06.897] [INFO] default - getting current rooms sessions
+[2021-10-09T01:16:06.898] [INFO] default - sending open rooms sessions
+[2021-10-09T01:23:59.357] [INFO] default - getting current rooms sessions
+[2021-10-09T01:23:59.358] [INFO] default - sending open rooms sessions
+[2021-10-09T01:23:59.359] [INFO] default - the user: lB4zTm4KmqL0Be0oAAAB has disconnecting
+[2021-10-09T01:23:59.855] [INFO] default - the user: Vi59WNz0IQYq4h61AAAD has connected
+[2021-10-09T01:23:59.855] [INFO] default - getting current rooms sessions
+[2021-10-09T01:23:59.856] [INFO] default - sending open rooms sessions
