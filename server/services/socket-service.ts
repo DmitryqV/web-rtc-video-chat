@@ -1,6 +1,6 @@
 const actions = require('../../src/socket/socket-events');
 
-module.exports = (io) => {
+module.exports = (io: any) => {
   const getRooms = () => {
     logger.info('getting current rooms sessions');
     return Array.from(io.sockets.adapter.rooms.keys());
@@ -11,10 +11,10 @@ module.exports = (io) => {
     logger.info('sending open rooms sessions');
   };
 
-  const leaveRoom = (socket) => {
+  const leaveRoom = (socket: any) => {
     const { rooms } = socket;
 
-    rooms.forEach((roomID) => {
+    rooms.forEach((roomID: string) => {
       Array.from(io.sockets.adapter.rooms.get(roomID) || []).forEach((clientID) => {
         io.to(clientID).emit(actions.removePeer, {
           peerID: socket.id
@@ -29,11 +29,11 @@ module.exports = (io) => {
     shareRooms();
   };
 
-  io.on('connection', (socket) => {
+  io.on('connection', (socket: any) => {
     logger.info(`the user: ${socket.id} has connected`);
     shareRooms();
 
-    socket.on(actions.join, (config) => {
+    socket.on(actions.join, (config: any) => {
       const { rooms: joinedRooms } = socket;
       const { room: roomID } = config;
 

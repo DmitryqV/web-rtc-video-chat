@@ -1,5 +1,5 @@
 const log4js = require("log4js");
-logger = log4js.getLogger();
+const logger = log4js.getLogger();
 logger.level = 'info';
 
 log4js.configure({
