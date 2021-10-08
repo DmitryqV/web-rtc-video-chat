@@ -1,6 +1,6 @@
-const actions = require('../../src/socket/socket-events');
-
 module.exports = (io: any) => {
+  const actions = require('../../src/socket/socket-events');
+  const logger = require("../log/logger");
   const getRooms = () => {
     logger.info('getting current rooms sessions');
     return Array.from(io.sockets.adapter.rooms.keys());
