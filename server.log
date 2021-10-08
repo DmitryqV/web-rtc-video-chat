@@ -1,8 +1,46 @@
-[2021-10-08T11:37:59.249] [INFO] default - socket services loaded
-[2021-10-08T11:37:59.252] [INFO] default - server stated, port: 3001
-[2021-10-08T16:40:06.365] [INFO] default - socket services loaded
-[2021-10-08T16:40:06.367] [INFO] default - server stated, port: 3001
-[2021-10-08T16:42:20.383] [INFO] default - socket services loaded
-[2021-10-08T16:42:20.385] [INFO] default - server stated, port: 3001
-[2021-10-08T16:43:49.570] [INFO] default - socket services loaded
-[2021-10-08T16:43:49.573] [INFO] default - server stated, port: 3001
+[2021-10-08T16:58:42.029] [INFO] default - socket services loaded
+[2021-10-08T16:58:42.031] [INFO] default - server stated, port: 3001
+[2021-10-08T16:59:33.576] [INFO] default - socket services loaded
+[2021-10-08T16:59:33.578] [INFO] default - server stated, port: 3001
+[2021-10-08T17:00:07.522] [ERROR] default - socket services not loaded! [96mserver/services/socket-service.ts[0m:[93m33[0m:[93m32[0m - [91merror[0m[90m TS2749: [0m'iSocket' refers to a value, but is being used as a type here. Did you mean 'typeof iSocket'?
+
+[7m33[0m   io.on('connection', (socket: iSocket) => {
+[7m  [0m [91m                               ~~~~~~~[0m
+
+[2021-10-08T17:00:07.525] [INFO] default - server stated, port: 3001
+[2021-10-08T17:00:53.543] [ERROR] default - socket services not loaded! [96mserver/services/socket-service.ts[0m:[93m33[0m:[93m32[0m - [91merror[0m[90m TS2749: [0m'iSocket' refers to a value, but is being used as a type here. Did you mean 'typeof iSocket'?
+
+[7m33[0m   io.on('connection', (socket: iSocket) => {
+[7m  [0m [91m                               ~~~~~~~[0m
+
+[2021-10-08T17:00:53.545] [INFO] default - server stated, port: 3001
+[2021-10-08T17:01:26.246] [ERROR] default - socket services not loaded! [96mserver/services/socket-service.ts[0m:[93m33[0m:[93m32[0m - [91merror[0m[90m TS2749: [0m'iSocket' refers to a value, but is being used as a type here. Did you mean 'typeof iSocket'?
+
+[7m33[0m   io.on('connection', (socket: iSocket) => {
+[7m  [0m [91m                               ~~~~~~~[0m
+
+[2021-10-08T17:01:26.249] [INFO] default - server stated, port: 3001
+[2021-10-08T17:02:24.783] [ERROR] default - socket services not loaded! /home/dvlasenko/Desktop/web-rtc-video-chat/server/myInterfaces/index.ts:2
+export {};
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1031:15)
+    at Module._compile (node:internal/modules/cjs/loader:1065:27)
+    at Module.m._compile (/home/dvlasenko/Desktop/web-rtc-video-chat/node_modules/ts-node/src/index.ts:1310:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Object.require.extensions.<computed> [as .ts] (/home/dvlasenko/Desktop/web-rtc-video-chat/node_modules/ts-node/src/index.ts:1313:12)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:94:18)
+[2021-10-08T17:02:24.785] [INFO] default - server stated, port: 3001
+[2021-10-08T17:02:27.525] [ERROR] default - socket services not loaded! [96mserver/services/socket-service.ts[0m:[93m2[0m:[93m1[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m2[0m ]
+[7m [0m [91m~[0m
+
+[2021-10-08T17:02:27.527] [INFO] default - server stated, port: 3001
+[2021-10-08T17:02:32.132] [INFO] default - socket services loaded
+[2021-10-08T17:02:32.135] [INFO] default - server stated, port: 3001
