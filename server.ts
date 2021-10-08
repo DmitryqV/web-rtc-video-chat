@@ -3,20 +3,21 @@ const path = require('path');
 const logger = require('./server/log/logger');
 const app = express();
 const server = require('http').createServer(app);
-const port = process.env.PORT || 3001;
+const port: string | number = process.env.PORT || '3001';
 
 try {
   require('./server/services/socket-service')(
     require('socket.io')(server)
   );
   logger.info('socket services loaded');
-} catch {
-  logger.error('socket services not loaded!');
+} catch (e) {
+  logger.error('socket services not loaded!', e);
+  console.log(e);
 }
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('build'));
-  app.get('*', (res, req) => {
+  app.get('*', ({ }, req: any) => {
     try {
       req.sendStatus(200).sendFile(path.resolve(__dirname, 'build', 'index.html'));
       logger.info('build succeeded');
@@ -27,6 +28,4 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
-server.listen(port, () => {
-  logger.info('server stated, port: ' + port);
-});
+server.listen(port, () => logger.info('server stated, port: ' + port));
