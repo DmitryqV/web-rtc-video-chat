@@ -1,9 +1,11 @@
 module.exports = (io: any) => {
   const actions = require('../../src/socket/socket-events');
   const logger = require("../log/logger");
+  const { version, validate } = require('uuid');
+
   const getRooms = () => {
     logger.info('getting current rooms sessions');
-    return Array.from(io.sockets.adapter.rooms.keys());
+    return Array.from(io.sockets.adapter.rooms.keys()).filter((roomID) => validate(roomID) && version(roomID) === 4);
   };
 
   const shareRooms = () => {
