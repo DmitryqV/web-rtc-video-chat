@@ -61,5 +61,17 @@ module.exports = (io: any) => {
       leaveRoom(socket);
       logger.info(`the user: ${socket.id} has disconnecting`);
     });
+    socket.on(actions.relaySdp, ({ peerID, sessionDescription }: any) => {
+      io.to(peerID).emit(actions.sessionDescription, {
+        peerID: socket.id,
+        sessionDescription
+      });
+    });
+    socket.on(actions.relayIce, ({ peerID, iceCandidate }: any) => {
+      io.to(peerID).emit(actions.iceCandidate, {
+        peerID: socket.id,
+        iceCandidate
+      });
+    });
   });
 };
