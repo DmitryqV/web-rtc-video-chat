@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import { useHistory } from 'react-router';
 import { IRooms } from '../../myInterfaces';
+import { v4 } from 'uuid';
 import './room-list.css';
 
 export const RoomList: FC<IRooms> = ({ rooms }) => {
@@ -24,6 +25,9 @@ export const RoomList: FC<IRooms> = ({ rooms }) => {
           );
         })
       }
+      <button onClick={() => history.push('/room/' + v4())}>
+        create
+      </button>
     </section>
   );
 };

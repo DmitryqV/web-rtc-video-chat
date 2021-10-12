@@ -25,6 +25,7 @@ module.exports = (io: any) => {
           peerID: clientID
         });
       });
+
       logger.info(`the user: ${socket.id} has left the room: ${roomID}`);
       socket.leave(roomID);
     });
@@ -40,6 +41,7 @@ module.exports = (io: any) => {
       const { room: roomID } = config;
 
       if (!Array.from(joinedRooms).includes(roomID)) {
+
         Array.from(io.sockets.adapter.rooms.get(roomID) || []).forEach((clientID) => {
           io.to(clientID).emit(actions.addPeer, {
             peerID: socket.id,
@@ -50,28 +52,34 @@ module.exports = (io: any) => {
             createOffer: true
           });
         });
+
         socket.join(roomID);
         logger.info(`the user: ${socket.id} has join the room: ${roomID}`);
         getRooms();
       };
+      shareRooms();
     });
 
     socket.on(actions.leave, () => leaveRoom(socket));
+
     socket.on('disconnect', () => {
       leaveRoom(socket);
       logger.info(`the user: ${socket.id} has disconnecting`);
     });
+
     socket.on(actions.relaySdp, ({ peerID, sessionDescription }: any) => {
       io.to(peerID).emit(actions.sessionDescription, {
         peerID: socket.id,
         sessionDescription
       });
     });
+
     socket.on(actions.relayIce, ({ peerID, iceCandidate }: any) => {
       io.to(peerID).emit(actions.iceCandidate, {
         peerID: socket.id,
         iceCandidate
       });
     });
+
   });
 };

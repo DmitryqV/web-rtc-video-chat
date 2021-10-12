@@ -1,17 +1,17 @@
 import React, { FC } from 'react';
-import { useHistory } from 'react-router';
 import { RoomList } from '../../components/room-list/room-list';
 import { IRooms } from '../../myInterfaces';
-import { v4 } from 'uuid';
+
+import './main.css';
 
 export const MainPage: FC<IRooms> = ({ rooms }) => {
-  const history = useHistory<unknown>();
   return (
-    <>
+    <section className='main-section'>
       <RoomList rooms={rooms} />
-      <button onClick={() => history.push('/room/' + v4())}>
-        create
-      </button>
-    </>
+      <p className='main-title'>
+        <span className='main-title_border'>Join or create </span>
+        <span className='main-title_target-word'>room</span> !
+      </p>
+    </section>
   );
 };

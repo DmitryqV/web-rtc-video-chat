@@ -1,0 +1,23 @@
+.main-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.main-title {
+  margin: auto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 61px;
+}
+
+.main-title_target-word {
+  color: #15C7FF;
+}
+
+.main-title_border {
+  width: 100%;
+  border-bottom: 4px solid #15C7FF;
+}
