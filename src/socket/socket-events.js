@@ -6,6 +6,6 @@ module.exports = {
   removePeer: 'remove_peer',
   relayIce: 'relay_ice',
   relaySdp: 'relay_sdp',
+  iceCandidate: 'ice_candidate',
   sessionDescription: 'description',
-  iceCandidate: 'ice_candidate'
 };
