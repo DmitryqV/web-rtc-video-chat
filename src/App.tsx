@@ -4,9 +4,10 @@ import React, { FC, useEffect, useState } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { MainPage, RoomPage, NotFoundPage } from './pages/index';
 import { IRooms } from './myInterfaces';
+
 const App: FC = () => {
   const [rooms, updateRooms] = useState<string[]>();
-
+  console.log(window.location.href);
   useEffect(() => {
     socket.on(actions.share, ({ rooms }: IRooms) => {
       if (rooms !== undefined) updateRooms(rooms);
