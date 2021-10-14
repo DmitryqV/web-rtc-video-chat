@@ -7,9 +7,7 @@ const server = require('http').createServer(app);
 const port: string | number = process.env.PORT || 3001;
 
 try {
-  require('./server/services/socket-service')(
-    require('socket.io')(server)
-  );
+  require('./server/services/socket-service')(server);
   logger.info('socket services loaded');
 } catch (e) {
   logger.error('socket services not loaded!', e);

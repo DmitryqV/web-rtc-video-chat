@@ -1,7 +1,8 @@
-module.exports = (io: any) => {
+module.exports = (server: any) => {
+  const io = require('socket.io')(server);
   const actions = require('../../src/socket/socket-events');
-  const logger = require("../log/logger");
   const { version, validate } = require('uuid');
+  const logger = require("../log/logger");
 
   const getRooms = () => {
     logger.info('getting current rooms sessions');
