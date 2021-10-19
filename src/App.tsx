@@ -8,19 +8,24 @@ import { IRooms } from './myInterfaces';
 const App: FC = () => {
   const [rooms, updateRooms] = useState<string[]>();
 
-  console.log(window.location.href);
   useEffect(() => {
     socket.on(actions.share, ({ rooms }: IRooms) => {
       if (rooms !== undefined) updateRooms(rooms);
     });
   }, [rooms]);
 
+  useEffect(() => {
+    if (window.location.pathname.includes('/room/')) {
+      console.log(window.location.pathname.replace('/room/', ''));
+    };
+  }, []);
+
   return (
     <BrowserRouter>
       <Switch>
         <Route path='/' component={() => <MainPage rooms={rooms} />} exact />
         <Route path='/room/:id' component={RoomPage} exact />
-        <Route component={NotFoundPage} />
+        <Route path='*' component={NotFoundPage} />
       </Switch>
     </BrowserRouter>
   );

@@ -15,13 +15,13 @@ try {
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('build'));
-  app.get('*', ({ }, req: any) => {
+  app.get('*', (_: undefined, req: any) => {
     try {
       req.sendStatus(200).sendFile(path.resolve(__dirname, 'build', 'index.html'));
       logger.info('build succeeded');
     } catch (e) {
       logger.error('building error, folder "build" not found in root dirictory.', e);
-      req.sendStatus(404);
+      req.statusCode(404);
     }
   });
 }
