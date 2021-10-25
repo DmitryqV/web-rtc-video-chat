@@ -6,22 +6,28 @@ import freeice from 'freeice';
 const localRecord = 'localhost';
 
 export const webRTC = (roomID) => {
+  const mediaElements = useRef({ localRecord: null });
   const [users, setUsers] = useCustomCB([]);
   const localStream = useRef(null);
-  const mediaElements = useRef({ localRecord: null });
   const connections = useRef({});
 
   const addNewUser = useCallback((nUser, cb) => {
-    if (!users.includes(nUser)) setUsers((users) => [...users, nUser], cb);
+    if (!users.includes(nUser)) {
+      setUsers((users) => [...users, nUser], cb);
+    };
   }, [users, setUsers]);
 
   const newPeerHandler = async ({ peerID, createOffer }) => {
-    if (peerID in connections.current) return null;
+    if (peerID in connections.current) {
+      return null;
+    };
 
     connections.current[peerID] = new RTCPeerConnection({ iceServers: freeice() });
 
     connections.current[peerID].onicecandidate = (e) => {
-      if (e.candidate) socket.emit(actions.relayIce, { peerID, iceCandidate: e.candidate });
+      if (e.candidate) {
+        socket.emit(actions.relayIce, { peerID, iceCandidate: e.candidate });
+      };
     };
 
     let trackNumber = 0;
@@ -66,7 +72,6 @@ export const webRTC = (roomID) => {
   socket.on(actions.iceCandidate, ({ peerID, iceCandidate }) => {
     connections.current[peerID].addIceCandidate(new RTCIceCandidate(iceCandidate));
   });
-
 
   socket.on(actions.removePeer, ({ peerID }) => {
     if (connections.current[peerID]) connections.current[peerID].close();

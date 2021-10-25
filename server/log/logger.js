@@ -8,7 +8,10 @@ log4js.configure({
     'file': { type: 'file', filename: 'server.log' }
   },
   categories: {
-    default: { appenders: ['file', 'console'], level: 'INFO' },
+    default: {
+      appenders: ['file', 'console'],
+      level: 'INFO'
+    },
   }
 });
 

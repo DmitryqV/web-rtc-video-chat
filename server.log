@@ -1,0 +1,85 @@
+[2021-10-25T17:13:30.412] [INFO] default - socket services loaded
+[2021-10-25T17:13:30.417] [INFO] default - server stated, port: 3001
+[2021-10-25T17:14:16.747] [INFO] default - the user: Zoe9DgDtETgU05xdAAAB has connected
+[2021-10-25T17:14:16.747] [INFO] default - getting current rooms sessions
+[2021-10-25T17:14:16.749] [INFO] default - sending open rooms sessions
+[2021-10-25T17:26:11.995] [INFO] default - the user: Zoe9DgDtETgU05xdAAAB has join the room: 408901ad-c70a-4d55-b5c7-b0a20851aec8
+[2021-10-25T17:26:11.995] [INFO] default - getting current rooms sessions
+[2021-10-25T17:26:11.997] [INFO] default - getting current rooms sessions
+[2021-10-25T17:26:11.998] [INFO] default - sending open rooms sessions
+[2021-10-25T17:26:14.613] [INFO] default - the user: 2r4YZjiiCzMEa9AQAAAD has connected
+[2021-10-25T17:26:14.613] [INFO] default - getting current rooms sessions
+[2021-10-25T17:26:14.614] [INFO] default - sending open rooms sessions
+[2021-10-25T17:34:17.524] [INFO] default - getting current rooms sessions
+[2021-10-25T17:34:17.524] [INFO] default - sending open rooms sessions
+[2021-10-25T17:34:17.524] [INFO] default - the user: 2r4YZjiiCzMEa9AQAAAD has disconnecting
+[2021-10-25T17:34:17.713] [INFO] default - the user: mojDdU3spyq8upBRAAAF has connected
+[2021-10-25T17:34:17.714] [INFO] default - getting current rooms sessions
+[2021-10-25T17:34:17.714] [INFO] default - sending open rooms sessions
+[2021-10-25T17:34:22.088] [INFO] default - the user: mojDdU3spyq8upBRAAAF has join the room: f8d199b4-a386-4288-ae50-d4a21f398243
+[2021-10-25T17:34:22.088] [INFO] default - getting current rooms sessions
+[2021-10-25T17:34:22.089] [INFO] default - getting current rooms sessions
+[2021-10-25T17:34:22.089] [INFO] default - sending open rooms sessions
+[2021-10-25T17:34:23.071] [INFO] default - the user: mojDdU3spyq8upBRAAAF has left the room: mojDdU3spyq8upBRAAAF
+[2021-10-25T17:34:23.072] [INFO] default - the user: mojDdU3spyq8upBRAAAF has left the room: f8d199b4-a386-4288-ae50-d4a21f398243
+[2021-10-25T17:34:23.072] [INFO] default - getting current rooms sessions
+[2021-10-25T17:34:23.072] [INFO] default - sending open rooms sessions
+[2021-10-25T17:34:23.790] [INFO] default - getting current rooms sessions
+[2021-10-25T17:34:23.791] [INFO] default - sending open rooms sessions
+[2021-10-25T17:34:23.791] [INFO] default - the user: mojDdU3spyq8upBRAAAF has disconnecting
+[2021-10-25T17:34:23.974] [INFO] default - the user: BldVqNmo2vEJVBdGAAAH has connected
+[2021-10-25T17:34:23.974] [INFO] default - getting current rooms sessions
+[2021-10-25T17:34:23.974] [INFO] default - sending open rooms sessions
+[2021-10-25T17:42:52.763] [INFO] default - the user: BldVqNmo2vEJVBdGAAAH has join the room: bce4278b-c8bb-423c-a889-d342f3162fe3
+[2021-10-25T17:42:52.763] [INFO] default - getting current rooms sessions
+[2021-10-25T17:42:52.764] [INFO] default - getting current rooms sessions
+[2021-10-25T17:42:52.764] [INFO] default - sending open rooms sessions
+[2021-10-25T17:42:56.085] [INFO] default - the user: BldVqNmo2vEJVBdGAAAH has left the room: BldVqNmo2vEJVBdGAAAH
+[2021-10-25T17:42:56.086] [INFO] default - the user: BldVqNmo2vEJVBdGAAAH has left the room: bce4278b-c8bb-423c-a889-d342f3162fe3
+[2021-10-25T17:42:56.086] [INFO] default - getting current rooms sessions
+[2021-10-25T17:42:56.086] [INFO] default - sending open rooms sessions
+[2021-10-25T17:42:56.921] [INFO] default - getting current rooms sessions
+[2021-10-25T17:42:56.921] [INFO] default - sending open rooms sessions
+[2021-10-25T17:42:56.921] [INFO] default - the user: BldVqNmo2vEJVBdGAAAH has disconnecting
+[2021-10-25T17:42:57.029] [INFO] default - the user: zdxiWnF34uIEQrvVAAAJ has connected
+[2021-10-25T17:42:57.029] [INFO] default - getting current rooms sessions
+[2021-10-25T17:42:57.030] [INFO] default - sending open rooms sessions
+[2021-10-25T17:51:37.126] [INFO] default - getting current rooms sessions
+[2021-10-25T17:51:37.127] [INFO] default - sending open rooms sessions
+[2021-10-25T17:51:37.127] [INFO] default - the user: zdxiWnF34uIEQrvVAAAJ has disconnecting
+[2021-10-25T17:51:37.263] [INFO] default - the user: clS9FYzaqMPrNkZwAAAL has connected
+[2021-10-25T17:51:37.263] [INFO] default - getting current rooms sessions
+[2021-10-25T17:51:37.264] [INFO] default - sending open rooms sessions
+[2021-10-25T18:06:53.159] [INFO] default - the user: GXjWP6mkorDWmbBkAAAN has connected
+[2021-10-25T18:06:53.159] [INFO] default - getting current rooms sessions
+[2021-10-25T18:06:53.159] [INFO] default - sending open rooms sessions
+[2021-10-25T18:06:55.531] [INFO] default - the user: GXjWP6mkorDWmbBkAAAN has join the room: 408901ad-c70a-4d55-b5c7-b0a20851aec8
+[2021-10-25T18:06:55.531] [INFO] default - getting current rooms sessions
+[2021-10-25T18:06:55.531] [INFO] default - getting current rooms sessions
+[2021-10-25T18:06:55.531] [INFO] default - sending open rooms sessions
+[2021-10-25T18:06:57.774] [INFO] default - the user: pFGHM522cQzBP0fjAAAP has connected
+[2021-10-25T18:06:57.774] [INFO] default - getting current rooms sessions
+[2021-10-25T18:06:57.774] [INFO] default - sending open rooms sessions
+[2021-10-25T18:06:59.443] [INFO] default - the user: pFGHM522cQzBP0fjAAAP has join the room: 408901ad-c70a-4d55-b5c7-b0a20851aec8
+[2021-10-25T18:06:59.443] [INFO] default - getting current rooms sessions
+[2021-10-25T18:06:59.443] [INFO] default - getting current rooms sessions
+[2021-10-25T18:06:59.443] [INFO] default - sending open rooms sessions
+[2021-10-25T18:07:01.547] [INFO] default - the user: CJworh_XoA9NtOWyAAAR has connected
+[2021-10-25T18:07:01.548] [INFO] default - getting current rooms sessions
+[2021-10-25T18:07:01.548] [INFO] default - sending open rooms sessions
+[2021-10-25T18:07:04.273] [INFO] default - the user: CJworh_XoA9NtOWyAAAR has join the room: 408901ad-c70a-4d55-b5c7-b0a20851aec8
+[2021-10-25T18:07:04.273] [INFO] default - getting current rooms sessions
+[2021-10-25T18:07:04.273] [INFO] default - getting current rooms sessions
+[2021-10-25T18:07:04.273] [INFO] default - sending open rooms sessions
+[2021-10-25T18:07:07.125] [INFO] default - getting current rooms sessions
+[2021-10-25T18:07:07.126] [INFO] default - sending open rooms sessions
+[2021-10-25T18:07:07.126] [INFO] default - the user: Zoe9DgDtETgU05xdAAAB has disconnecting
+[2021-10-25T18:07:07.541] [INFO] default - getting current rooms sessions
+[2021-10-25T18:07:07.542] [INFO] default - sending open rooms sessions
+[2021-10-25T18:07:07.542] [INFO] default - the user: GXjWP6mkorDWmbBkAAAN has disconnecting
+[2021-10-25T18:07:07.868] [INFO] default - getting current rooms sessions
+[2021-10-25T18:07:07.868] [INFO] default - sending open rooms sessions
+[2021-10-25T18:07:07.868] [INFO] default - the user: pFGHM522cQzBP0fjAAAP has disconnecting
+[2021-10-25T18:07:08.670] [INFO] default - getting current rooms sessions
+[2021-10-25T18:07:08.671] [INFO] default - sending open rooms sessions
+[2021-10-25T18:07:08.671] [INFO] default - the user: CJworh_XoA9NtOWyAAAR has disconnecting
