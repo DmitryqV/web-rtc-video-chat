@@ -26,4 +26,4 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
-server.listen(port, 'localhost', () => logger.info('server stated, port: ' + port));
+server.listen(port, () => logger.info('server stated, port: ' + port));
