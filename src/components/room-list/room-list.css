@@ -117,6 +117,10 @@ svg{
   fill: #f9f9f9;
 }
 
+.room-settings__item:hover{
+  background-color: #005f7c
+}
+
 .user-view{
   width: 100%;
   position: absolute;
