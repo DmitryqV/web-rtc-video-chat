@@ -83,3 +83,22 @@
 [2021-10-25T18:07:08.670] [INFO] default - getting current rooms sessions
 [2021-10-25T18:07:08.671] [INFO] default - sending open rooms sessions
 [2021-10-25T18:07:08.671] [INFO] default - the user: CJworh_XoA9NtOWyAAAR has disconnecting
+[2021-10-29T12:16:25.099] [INFO] default - socket services loaded
+[2021-10-29T12:16:25.102] [INFO] default - server stated, port: 3001
+[2021-10-29T12:16:26.925] [INFO] default - the user: GqxMYTyloJQyH4I-AAAB has connected
+[2021-10-29T12:16:26.926] [INFO] default - getting current rooms sessions
+[2021-10-29T12:16:26.927] [INFO] default - sending open rooms sessions
+[2021-10-29T14:43:43.239] [INFO] default - socket services loaded
+[2021-10-29T14:43:43.242] [INFO] default - server stated, port: 3001
+[2021-10-29T14:43:55.918] [INFO] default - the user: qER6g91kz7BxG18UAAAB has connected
+[2021-10-29T14:43:55.918] [INFO] default - getting current rooms sessions
+[2021-10-29T14:43:55.920] [INFO] default - sending open rooms sessions
+[2021-10-29T14:44:15.550] [INFO] default - the user: Ax6wcANrFB72pbrOAAAD has connected
+[2021-10-29T14:44:15.551] [INFO] default - getting current rooms sessions
+[2021-10-29T14:44:15.552] [INFO] default - sending open rooms sessions
+[2021-10-29T14:54:16.723] [INFO] default - getting current rooms sessions
+[2021-10-29T14:54:16.724] [INFO] default - sending open rooms sessions
+[2021-10-29T14:54:16.724] [INFO] default - the user: Ax6wcANrFB72pbrOAAAD has disconnecting
+[2021-10-29T14:54:16.901] [INFO] default - the user: aA4SpSL_KrugEIvvAAAF has connected
+[2021-10-29T14:54:16.901] [INFO] default - getting current rooms sessions
+[2021-10-29T14:54:16.902] [INFO] default - sending open rooms sessions

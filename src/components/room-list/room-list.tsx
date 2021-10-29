@@ -28,6 +28,12 @@ export const RoomList: FC<IRooms> = ({ rooms }) => {
       <button className='room-list__create' onClick={() => history.push('/room/' + v4())}>
         +
       </button>
+      <section className='user-view'>
+        <img className='user-avatar' src='https://avatars.mds.yandex.net/i?id=b34b60c4d6a5e98f1825be8a9ea93b3f-3829399-images-thumbs&n=13' alt='img' />
+        <span className='user-name'>
+          DmitryqV
+        </span>
+      </section>
       <section className='room-settings'>
         <div className='room-settings__item camera'>
           <svg width='32' height='32' fill='white' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
