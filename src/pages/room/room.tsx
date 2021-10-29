@@ -1,4 +1,3 @@
-// @ts-nocheck
 import React, { FC } from 'react';
 import { useParams } from 'react-router-dom';
 import { webRTC } from '../../services/webrtc';

@@ -1,4 +1,3 @@
-// @ts-nocheck
 import actions from './socket/socket-events';
 import { socket } from './socket/socket';
 import React, { FC, useEffect, useState } from 'react';
