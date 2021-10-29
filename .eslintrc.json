@@ -4,8 +4,7 @@
     "es6": true
   },
   "extends": [
-    "plugin:react/recommended",
-    "google"
+    "plugin:react/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -17,9 +16,12 @@
   },
   "plugins": [
     "react",
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "react-hooks"
   ],
   "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
     "object-curly-spacing": [
       1,
       "always"

@@ -1,11 +1,12 @@
 // @ts-ignore
+// @ts-nocheck
 const express = require('express');
 const path = require('path');
 const logger = require('./server/log/logger');
 const app = express();
 const server = require('http').createServer(app);
 const port: string | number = process.env.PORT || 3001;
-
+const host: string = 'localhost';
 try {
   require('./server/services/socket-service')(server);
   logger.info('socket services loaded');
@@ -26,4 +27,7 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
-server.listen(port, () => logger.info('server stated, port: ' + port));
+server.listen(port, host, () => {
+  console.log(process.env.NODE_ENV);
+  logger.info('server stated, port: ' + port)
+});
