@@ -34,6 +34,7 @@
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
+  text-transform: uppercase;
   width: 48px;
   height: 48px;
   margin-bottom: 6px;
@@ -65,8 +66,8 @@
 }
 
 .room-list__item:hover .room-list__item-avatar {
-  color: #15C7FF;
-  background-color: #fff;
+  background-color: rgba(21, 200, 255, 0.75);
+  color: #fff;
 }
 
 .room-list__item:hover {
