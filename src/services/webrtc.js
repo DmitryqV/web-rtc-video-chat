@@ -6,11 +6,9 @@ import freeice from 'freeice';
 const localRecord = 'localhost';
 
 export const webRTC = (roomID) => {
+  const mediaElements = useRef({ localRecord: null });
   const [users, setUsers] = useCustomCB([]);
   const localStream = useRef(null);
-  const mediaElements = useRef({
-    localRecord: null
-  });
   const connections = useRef({});
 
   const addNewUser = useCallback((nUser, cb) => {
@@ -18,6 +16,7 @@ export const webRTC = (roomID) => {
       setUsers((users) => [...users, nUser], cb);
     };
   }, [users, setUsers]);
+
   useEffect(() => {
     const newPeerHandler = async ({ peerID, createOffer }) => {
       if (peerID in connections.current) {
