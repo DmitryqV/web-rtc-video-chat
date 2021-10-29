@@ -1,16 +1,34 @@
-import React, { FC } from 'react';
+import React, { FC, useState } from 'react';
+
+interface iSettings {
+  video: boolean,
+  audio: boolean
+};
 
 export const UserAcccess: FC = () => {
+  const [state, setState] = useState<iSettings>({
+    video: true,
+    audio: true,
+  });
+
+  const AudioController = () => {
+    setState({ video: state.video, audio: !state.audio });
+  };
+
+  const VideoController = () => {
+    setState({ video: !state.video, audio: state.audio });
+  };
+
   return (
     <>
       <section className='user-view'>
-        <img className='user-avatar' src='https://avatars.githubusercontent.com/u/67154333?v=4' alt='img' />
+        <img className='user-avatar' src='https://avatars.githubusercontent.com/u/67154333?v=4' alt='' />
         <a href='https://github.com/DmitryqV' className='user-name'>
           DmitryqV
         </a>
       </section>
       <section className='room-settings'>
-        <div className='room-settings__item camera'>
+        <div className='room-settings__item camera' onClick={VideoController}>
           <svg width='32' height='32' fill='white' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
             <g clipPath='url(#clip0_3:28)'>
               <path d='M18.1007 6.59955H3.50109C1.57549 6.59955 0 8.17504 0 10.1006V21.8993C0 23.8249 1.57549 25.4004 3.50109 25.4004H18.1007C20.0263 25.4004 21.6018 23.8249
@@ -27,7 +45,7 @@ export const UserAcccess: FC = () => {
             </defs>
           </svg>
         </div>
-        <div className='room-settings__item microphone'>
+        <div className='room-settings__item microphone' onClick={AudioController}>
           <svg width='32' height='32' fill='#15C8FF' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
             <path d='M26.24 16.5271C26.24 15.8871 25.7506 15.3976 25.1106 15.3976C24.4706 15.3976 23.9812 15.8871 23.9812 16.5271C23.9812 20.9318 20.4047 24.5082 16 24.5082C11.5953
               24.5082 8.01883 20.9318 8.01883 16.5271C8.01883 15.8871 7.52941 15.3976 6.88941 15.3976C6.24941 15.3976 5.76 15.8871 5.76 16.5271C5.76 21.76 9.6753 26.1647 14.8706
