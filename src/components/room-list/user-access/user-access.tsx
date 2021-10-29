@@ -5,9 +5,9 @@ export const UserAcccess: FC = () => {
     <>
       <section className='user-view'>
         <img className='user-avatar' src='https://avatars.mds.yandex.net/i?id=b34b60c4d6a5e98f1825be8a9ea93b3f-3829399-images-thumbs&n=13' alt='img' />
-        <span className='user-name'>
+        <a href='https://github.com/DmitryqV' className='user-name'>
           DmitryqV
-        </span>
+        </a>
       </section>
       <section className='room-settings'>
         <div className='room-settings__item camera'>
