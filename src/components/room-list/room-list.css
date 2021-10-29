@@ -20,6 +20,7 @@
   width: 100%;
   height: calc(100% - 191px);
   overflow-y: auto;
+  overflow-x: hidden;
 }
 .room-list__item {
   cursor: pointer;

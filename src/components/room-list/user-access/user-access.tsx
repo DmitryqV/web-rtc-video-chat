@@ -4,7 +4,7 @@ export const UserAcccess: FC = () => {
   return (
     <>
       <section className='user-view'>
-        <img className='user-avatar' src='https://avatars.mds.yandex.net/i?id=b34b60c4d6a5e98f1825be8a9ea93b3f-3829399-images-thumbs&n=13' alt='img' />
+        <img className='user-avatar' src='https://avatars.githubusercontent.com/u/67154333?v=4' alt='img' />
         <a href='https://github.com/DmitryqV' className='user-name'>
           DmitryqV
         </a>
