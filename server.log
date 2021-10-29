@@ -486,3 +486,226 @@
 [2021-10-29T23:52:07.239] [INFO] default - the user: DVO8TUY6iv5LqLGOAABN has connected
 [2021-10-29T23:52:07.239] [INFO] default - getting current rooms sessions
 [2021-10-29T23:52:07.239] [INFO] default - sending open rooms sessions
+[2021-10-29T23:56:44.533] [INFO] default - the user: DVO8TUY6iv5LqLGOAABN has join the room: 81a8c6eb-27f4-42c7-a5ac-2d8635d555fa
+[2021-10-29T23:56:44.533] [INFO] default - getting current rooms sessions
+[2021-10-29T23:56:44.533] [INFO] default - getting current rooms sessions
+[2021-10-29T23:56:44.534] [INFO] default - sending open rooms sessions
+[2021-10-29T23:56:46.733] [INFO] default - the user: DVO8TUY6iv5LqLGOAABN has left the room: DVO8TUY6iv5LqLGOAABN
+[2021-10-29T23:56:46.733] [INFO] default - the user: DVO8TUY6iv5LqLGOAABN has left the room: 81a8c6eb-27f4-42c7-a5ac-2d8635d555fa
+[2021-10-29T23:56:46.733] [INFO] default - getting current rooms sessions
+[2021-10-29T23:56:46.733] [INFO] default - sending open rooms sessions
+[2021-10-29T23:56:47.856] [INFO] default - getting current rooms sessions
+[2021-10-29T23:56:47.857] [INFO] default - sending open rooms sessions
+[2021-10-29T23:56:47.857] [INFO] default - the user: DVO8TUY6iv5LqLGOAABN has disconnecting
+[2021-10-29T23:56:47.995] [INFO] default - the user: _OE4MY-Mui9Nh4LzAABP has connected
+[2021-10-29T23:56:47.996] [INFO] default - getting current rooms sessions
+[2021-10-29T23:56:47.996] [INFO] default - sending open rooms sessions
+[2021-10-29T23:58:58.150] [INFO] default - the user: _OE4MY-Mui9Nh4LzAABP has join the room: 74ac83bd-caf0-4ee7-87c6-60c5da0c2aad
+[2021-10-29T23:58:58.150] [INFO] default - getting current rooms sessions
+[2021-10-29T23:58:58.150] [INFO] default - getting current rooms sessions
+[2021-10-29T23:58:58.151] [INFO] default - sending open rooms sessions
+[2021-10-29T23:59:02.281] [INFO] default - the user: Rpqhriag0v5TlBK3AABR has connected
+[2021-10-29T23:59:02.281] [INFO] default - getting current rooms sessions
+[2021-10-29T23:59:02.281] [INFO] default - sending open rooms sessions
+[2021-10-29T23:59:04.699] [INFO] default - the user: Rpqhriag0v5TlBK3AABR has join the room: 74ac83bd-caf0-4ee7-87c6-60c5da0c2aad
+[2021-10-29T23:59:04.699] [INFO] default - getting current rooms sessions
+[2021-10-29T23:59:04.699] [INFO] default - getting current rooms sessions
+[2021-10-29T23:59:04.699] [INFO] default - sending open rooms sessions
+[2021-10-29T23:59:21.344] [INFO] default - the user: _OE4MY-Mui9Nh4LzAABP has left the room: _OE4MY-Mui9Nh4LzAABP
+[2021-10-29T23:59:21.345] [INFO] default - the user: _OE4MY-Mui9Nh4LzAABP has left the room: 74ac83bd-caf0-4ee7-87c6-60c5da0c2aad
+[2021-10-29T23:59:21.345] [INFO] default - getting current rooms sessions
+[2021-10-29T23:59:21.345] [INFO] default - sending open rooms sessions
+[2021-10-29T23:59:21.358] [INFO] default - the user: Rpqhriag0v5TlBK3AABR has left the room: Rpqhriag0v5TlBK3AABR
+[2021-10-29T23:59:21.359] [INFO] default - the user: Rpqhriag0v5TlBK3AABR has left the room: 74ac83bd-caf0-4ee7-87c6-60c5da0c2aad
+[2021-10-29T23:59:21.359] [INFO] default - getting current rooms sessions
+[2021-10-29T23:59:21.359] [INFO] default - sending open rooms sessions
+[2021-10-29T23:59:22.187] [INFO] default - the user: Rpqhriag0v5TlBK3AABR has join the room: 74ac83bd-caf0-4ee7-87c6-60c5da0c2aad
+[2021-10-29T23:59:22.187] [INFO] default - getting current rooms sessions
+[2021-10-29T23:59:22.188] [INFO] default - getting current rooms sessions
+[2021-10-29T23:59:22.188] [INFO] default - sending open rooms sessions
+[2021-10-29T23:59:27.240] [INFO] default - getting current rooms sessions
+[2021-10-29T23:59:27.240] [INFO] default - sending open rooms sessions
+[2021-10-29T23:59:27.240] [INFO] default - the user: Rpqhriag0v5TlBK3AABR has disconnecting
+[2021-10-29T23:59:27.453] [INFO] default - the user: c_g6WPumgiOfRg1DAABT has connected
+[2021-10-29T23:59:27.453] [INFO] default - getting current rooms sessions
+[2021-10-29T23:59:27.453] [INFO] default - sending open rooms sessions
+[2021-10-29T23:59:27.669] [INFO] default - the user: c_g6WPumgiOfRg1DAABT has join the room: 74ac83bd-caf0-4ee7-87c6-60c5da0c2aad
+[2021-10-29T23:59:27.670] [INFO] default - getting current rooms sessions
+[2021-10-29T23:59:27.670] [INFO] default - getting current rooms sessions
+[2021-10-29T23:59:27.670] [INFO] default - sending open rooms sessions
+[2021-10-29T23:59:29.271] [INFO] default - the user: _OE4MY-Mui9Nh4LzAABP has join the room: 74ac83bd-caf0-4ee7-87c6-60c5da0c2aad
+[2021-10-29T23:59:29.271] [INFO] default - getting current rooms sessions
+[2021-10-29T23:59:29.271] [INFO] default - getting current rooms sessions
+[2021-10-29T23:59:29.272] [INFO] default - sending open rooms sessions
+[2021-10-29T23:59:30.420] [INFO] default - getting current rooms sessions
+[2021-10-29T23:59:30.420] [INFO] default - sending open rooms sessions
+[2021-10-29T23:59:30.420] [INFO] default - the user: _OE4MY-Mui9Nh4LzAABP has disconnecting
+[2021-10-29T23:59:30.523] [INFO] default - the user: 0o80S-7FD4g5CW1mAABV has connected
+[2021-10-29T23:59:30.523] [INFO] default - getting current rooms sessions
+[2021-10-29T23:59:30.523] [INFO] default - sending open rooms sessions
+[2021-10-29T23:59:30.767] [INFO] default - the user: 0o80S-7FD4g5CW1mAABV has join the room: 74ac83bd-caf0-4ee7-87c6-60c5da0c2aad
+[2021-10-29T23:59:30.768] [INFO] default - getting current rooms sessions
+[2021-10-29T23:59:30.768] [INFO] default - getting current rooms sessions
+[2021-10-29T23:59:30.768] [INFO] default - sending open rooms sessions
+[2021-10-29T23:59:42.724] [INFO] default - getting current rooms sessions
+[2021-10-29T23:59:42.724] [INFO] default - sending open rooms sessions
+[2021-10-29T23:59:42.724] [INFO] default - the user: 0o80S-7FD4g5CW1mAABV has disconnecting
+[2021-10-29T23:59:42.935] [INFO] default - the user: luDd4eNEeQiN0dMlAABX has connected
+[2021-10-29T23:59:42.935] [INFO] default - getting current rooms sessions
+[2021-10-29T23:59:42.936] [INFO] default - sending open rooms sessions
+[2021-10-29T23:59:43.191] [INFO] default - the user: luDd4eNEeQiN0dMlAABX has join the room: 74ac83bd-caf0-4ee7-87c6-60c5da0c2aad
+[2021-10-29T23:59:43.191] [INFO] default - getting current rooms sessions
+[2021-10-29T23:59:43.191] [INFO] default - getting current rooms sessions
+[2021-10-29T23:59:43.191] [INFO] default - sending open rooms sessions
+[2021-10-29T23:59:51.875] [INFO] default - the user: c_g6WPumgiOfRg1DAABT has left the room: c_g6WPumgiOfRg1DAABT
+[2021-10-29T23:59:51.875] [INFO] default - the user: c_g6WPumgiOfRg1DAABT has left the room: 74ac83bd-caf0-4ee7-87c6-60c5da0c2aad
+[2021-10-29T23:59:51.875] [INFO] default - getting current rooms sessions
+[2021-10-29T23:59:51.875] [INFO] default - sending open rooms sessions
+[2021-10-29T23:59:51.896] [INFO] default - the user: luDd4eNEeQiN0dMlAABX has left the room: luDd4eNEeQiN0dMlAABX
+[2021-10-29T23:59:51.897] [INFO] default - the user: luDd4eNEeQiN0dMlAABX has left the room: 74ac83bd-caf0-4ee7-87c6-60c5da0c2aad
+[2021-10-29T23:59:51.899] [INFO] default - getting current rooms sessions
+[2021-10-29T23:59:51.899] [INFO] default - sending open rooms sessions
+[2021-10-30T00:00:06.860] [INFO] default - getting current rooms sessions
+[2021-10-30T00:00:06.861] [INFO] default - sending open rooms sessions
+[2021-10-30T00:00:06.870] [INFO] default - getting current rooms sessions
+[2021-10-30T00:00:06.870] [INFO] default - sending open rooms sessions
+[2021-10-30T00:00:08.011] [INFO] default - the user: luDd4eNEeQiN0dMlAABX has join the room: 74ac83bd-caf0-4ee7-87c6-60c5da0c2aad
+[2021-10-30T00:00:08.013] [INFO] default - getting current rooms sessions
+[2021-10-30T00:00:08.013] [INFO] default - getting current rooms sessions
+[2021-10-30T00:00:08.014] [INFO] default - sending open rooms sessions
+[2021-10-30T00:00:08.278] [INFO] default - getting current rooms sessions
+[2021-10-30T00:00:08.279] [INFO] default - sending open rooms sessions
+[2021-10-30T00:00:08.279] [INFO] default - getting current rooms sessions
+[2021-10-30T00:00:08.279] [INFO] default - sending open rooms sessions
+[2021-10-30T00:00:09.394] [INFO] default - the user: c_g6WPumgiOfRg1DAABT has join the room: 74ac83bd-caf0-4ee7-87c6-60c5da0c2aad
+[2021-10-30T00:00:09.394] [INFO] default - getting current rooms sessions
+[2021-10-30T00:00:09.394] [INFO] default - getting current rooms sessions
+[2021-10-30T00:00:09.395] [INFO] default - sending open rooms sessions
+[2021-10-30T00:00:10.426] [INFO] default - getting current rooms sessions
+[2021-10-30T00:00:10.426] [INFO] default - sending open rooms sessions
+[2021-10-30T00:00:10.426] [INFO] default - the user: luDd4eNEeQiN0dMlAABX has disconnecting
+[2021-10-30T00:00:10.607] [INFO] default - the user: CxfKs_H6glTXbE9_AABZ has connected
+[2021-10-30T00:00:10.608] [INFO] default - getting current rooms sessions
+[2021-10-30T00:00:10.608] [INFO] default - sending open rooms sessions
+[2021-10-30T00:00:10.852] [INFO] default - the user: CxfKs_H6glTXbE9_AABZ has join the room: 74ac83bd-caf0-4ee7-87c6-60c5da0c2aad
+[2021-10-30T00:00:10.853] [INFO] default - getting current rooms sessions
+[2021-10-30T00:00:10.853] [INFO] default - getting current rooms sessions
+[2021-10-30T00:00:10.853] [INFO] default - sending open rooms sessions
+[2021-10-30T00:00:10.854] [INFO] default - getting current rooms sessions
+[2021-10-30T00:00:10.854] [INFO] default - sending open rooms sessions
+[2021-10-30T00:00:13.118] [INFO] default - getting current rooms sessions
+[2021-10-30T00:00:13.119] [INFO] default - sending open rooms sessions
+[2021-10-30T00:00:13.119] [INFO] default - getting current rooms sessions
+[2021-10-30T00:00:13.120] [INFO] default - sending open rooms sessions
+[2021-10-30T00:00:13.884] [INFO] default - getting current rooms sessions
+[2021-10-30T00:00:13.884] [INFO] default - sending open rooms sessions
+[2021-10-30T00:00:13.884] [INFO] default - the user: c_g6WPumgiOfRg1DAABT has disconnecting
+[2021-10-30T00:00:14.057] [INFO] default - the user: yaJLjvfQ-aFb3C-jAABb has connected
+[2021-10-30T00:00:14.057] [INFO] default - getting current rooms sessions
+[2021-10-30T00:00:14.057] [INFO] default - sending open rooms sessions
+[2021-10-30T00:00:14.340] [INFO] default - the user: yaJLjvfQ-aFb3C-jAABb has join the room: 74ac83bd-caf0-4ee7-87c6-60c5da0c2aad
+[2021-10-30T00:00:14.341] [INFO] default - getting current rooms sessions
+[2021-10-30T00:00:14.341] [INFO] default - getting current rooms sessions
+[2021-10-30T00:00:14.341] [INFO] default - sending open rooms sessions
+[2021-10-30T00:00:14.342] [INFO] default - getting current rooms sessions
+[2021-10-30T00:00:14.342] [INFO] default - sending open rooms sessions
+[2021-10-30T00:00:26.532] [INFO] default - the user: yaJLjvfQ-aFb3C-jAABb has left the room: yaJLjvfQ-aFb3C-jAABb
+[2021-10-30T00:00:26.532] [INFO] default - the user: yaJLjvfQ-aFb3C-jAABb has left the room: 74ac83bd-caf0-4ee7-87c6-60c5da0c2aad
+[2021-10-30T00:00:26.532] [INFO] default - getting current rooms sessions
+[2021-10-30T00:00:26.534] [INFO] default - sending open rooms sessions
+[2021-10-30T00:00:27.191] [INFO] default - getting current rooms sessions
+[2021-10-30T00:00:27.192] [INFO] default - sending open rooms sessions
+[2021-10-30T00:00:27.192] [INFO] default - the user: yaJLjvfQ-aFb3C-jAABb has disconnecting
+[2021-10-30T00:00:27.517] [INFO] default - the user: wsAb693lB_kblSUUAABd has connected
+[2021-10-30T00:00:27.517] [INFO] default - getting current rooms sessions
+[2021-10-30T00:00:27.517] [INFO] default - sending open rooms sessions
+[2021-10-30T00:00:29.054] [INFO] default - the user: wsAb693lB_kblSUUAABd has join the room: 74ac83bd-caf0-4ee7-87c6-60c5da0c2aad
+[2021-10-30T00:00:29.055] [INFO] default - getting current rooms sessions
+[2021-10-30T00:00:29.055] [INFO] default - getting current rooms sessions
+[2021-10-30T00:00:29.055] [INFO] default - sending open rooms sessions
+[2021-10-30T00:00:29.055] [INFO] default - getting current rooms sessions
+[2021-10-30T00:00:29.055] [INFO] default - sending open rooms sessions
+[2021-10-30T00:00:44.967] [INFO] default - the user: CxfKs_H6glTXbE9_AABZ has left the room: CxfKs_H6glTXbE9_AABZ
+[2021-10-30T00:00:44.968] [INFO] default - the user: CxfKs_H6glTXbE9_AABZ has left the room: 74ac83bd-caf0-4ee7-87c6-60c5da0c2aad
+[2021-10-30T00:00:44.968] [INFO] default - getting current rooms sessions
+[2021-10-30T00:00:44.968] [INFO] default - sending open rooms sessions
+[2021-10-30T00:00:44.978] [INFO] default - the user: wsAb693lB_kblSUUAABd has left the room: wsAb693lB_kblSUUAABd
+[2021-10-30T00:00:44.979] [INFO] default - the user: wsAb693lB_kblSUUAABd has left the room: 74ac83bd-caf0-4ee7-87c6-60c5da0c2aad
+[2021-10-30T00:00:44.979] [INFO] default - getting current rooms sessions
+[2021-10-30T00:00:44.979] [INFO] default - sending open rooms sessions
+[2021-10-30T00:00:46.142] [INFO] default - the user: CxfKs_H6glTXbE9_AABZ has join the room: 74ac83bd-caf0-4ee7-87c6-60c5da0c2aad
+[2021-10-30T00:00:46.142] [INFO] default - getting current rooms sessions
+[2021-10-30T00:00:46.142] [INFO] default - getting current rooms sessions
+[2021-10-30T00:00:46.143] [INFO] default - sending open rooms sessions
+[2021-10-30T00:00:47.702] [INFO] default - getting current rooms sessions
+[2021-10-30T00:00:47.703] [INFO] default - sending open rooms sessions
+[2021-10-30T00:00:47.703] [INFO] default - the user: CxfKs_H6glTXbE9_AABZ has disconnecting
+[2021-10-30T00:00:47.904] [INFO] default - the user: QTBTWH8UejN0c3M2AABf has connected
+[2021-10-30T00:00:47.904] [INFO] default - getting current rooms sessions
+[2021-10-30T00:00:47.905] [INFO] default - sending open rooms sessions
+[2021-10-30T00:00:48.179] [INFO] default - the user: QTBTWH8UejN0c3M2AABf has join the room: 74ac83bd-caf0-4ee7-87c6-60c5da0c2aad
+[2021-10-30T00:00:48.179] [INFO] default - getting current rooms sessions
+[2021-10-30T00:00:48.179] [INFO] default - getting current rooms sessions
+[2021-10-30T00:00:48.179] [INFO] default - sending open rooms sessions
+[2021-10-30T00:00:52.089] [INFO] default - the user: wsAb693lB_kblSUUAABd has join the room: 74ac83bd-caf0-4ee7-87c6-60c5da0c2aad
+[2021-10-30T00:00:52.089] [INFO] default - getting current rooms sessions
+[2021-10-30T00:00:52.089] [INFO] default - getting current rooms sessions
+[2021-10-30T00:00:52.089] [INFO] default - sending open rooms sessions
+[2021-10-30T00:00:53.631] [INFO] default - getting current rooms sessions
+[2021-10-30T00:00:53.632] [INFO] default - sending open rooms sessions
+[2021-10-30T00:00:53.632] [INFO] default - the user: wsAb693lB_kblSUUAABd has disconnecting
+[2021-10-30T00:00:53.838] [INFO] default - the user: g1IXmWMzUXcnow4gAABh has connected
+[2021-10-30T00:00:53.838] [INFO] default - getting current rooms sessions
+[2021-10-30T00:00:53.838] [INFO] default - sending open rooms sessions
+[2021-10-30T00:00:54.161] [INFO] default - the user: g1IXmWMzUXcnow4gAABh has join the room: 74ac83bd-caf0-4ee7-87c6-60c5da0c2aad
+[2021-10-30T00:00:54.161] [INFO] default - getting current rooms sessions
+[2021-10-30T00:00:54.162] [INFO] default - getting current rooms sessions
+[2021-10-30T00:00:54.162] [INFO] default - sending open rooms sessions
+[2021-10-30T00:03:31.986] [INFO] default - getting current rooms sessions
+[2021-10-30T00:03:31.987] [INFO] default - sending open rooms sessions
+[2021-10-30T00:03:31.987] [INFO] default - the user: QTBTWH8UejN0c3M2AABf has disconnecting
+[2021-10-30T00:03:32.338] [INFO] default - the user: JOZpjs2EpXylWQRuAABj has connected
+[2021-10-30T00:03:32.338] [INFO] default - getting current rooms sessions
+[2021-10-30T00:03:32.339] [INFO] default - sending open rooms sessions
+[2021-10-30T00:03:32.580] [INFO] default - the user: JOZpjs2EpXylWQRuAABj has join the room: 74ac83bd-caf0-4ee7-87c6-60c5da0c2aad
+[2021-10-30T00:03:32.580] [INFO] default - getting current rooms sessions
+[2021-10-30T00:03:32.580] [INFO] default - getting current rooms sessions
+[2021-10-30T00:03:32.581] [INFO] default - sending open rooms sessions
+[2021-10-30T00:03:44.339] [INFO] default - getting current rooms sessions
+[2021-10-30T00:03:44.339] [INFO] default - sending open rooms sessions
+[2021-10-30T00:03:44.339] [INFO] default - the user: g1IXmWMzUXcnow4gAABh has disconnecting
+[2021-10-30T00:03:44.558] [INFO] default - the user: ZM5IrjMSi29ZoGhgAABl has connected
+[2021-10-30T00:03:44.559] [INFO] default - getting current rooms sessions
+[2021-10-30T00:03:44.559] [INFO] default - sending open rooms sessions
+[2021-10-30T00:03:44.897] [INFO] default - the user: ZM5IrjMSi29ZoGhgAABl has join the room: 74ac83bd-caf0-4ee7-87c6-60c5da0c2aad
+[2021-10-30T00:03:44.897] [INFO] default - getting current rooms sessions
+[2021-10-30T00:03:44.897] [INFO] default - getting current rooms sessions
+[2021-10-30T00:03:44.897] [INFO] default - sending open rooms sessions
+[2021-10-30T00:03:53.998] [INFO] default - the user: JOZpjs2EpXylWQRuAABj has left the room: JOZpjs2EpXylWQRuAABj
+[2021-10-30T00:03:53.998] [INFO] default - the user: JOZpjs2EpXylWQRuAABj has left the room: 74ac83bd-caf0-4ee7-87c6-60c5da0c2aad
+[2021-10-30T00:03:53.998] [INFO] default - getting current rooms sessions
+[2021-10-30T00:03:53.998] [INFO] default - sending open rooms sessions
+[2021-10-30T00:03:54.934] [INFO] default - getting current rooms sessions
+[2021-10-30T00:03:54.935] [INFO] default - sending open rooms sessions
+[2021-10-30T00:03:54.935] [INFO] default - the user: JOZpjs2EpXylWQRuAABj has disconnecting
+[2021-10-30T00:03:55.043] [INFO] default - the user: noi_bD3A7yWyAIIMAABn has connected
+[2021-10-30T00:03:55.043] [INFO] default - getting current rooms sessions
+[2021-10-30T00:03:55.043] [INFO] default - sending open rooms sessions
+[2021-10-30T00:03:56.999] [INFO] default - the user: ZM5IrjMSi29ZoGhgAABl has left the room: ZM5IrjMSi29ZoGhgAABl
+[2021-10-30T00:03:56.999] [INFO] default - the user: ZM5IrjMSi29ZoGhgAABl has left the room: 74ac83bd-caf0-4ee7-87c6-60c5da0c2aad
+[2021-10-30T00:03:56.999] [INFO] default - getting current rooms sessions
+[2021-10-30T00:03:56.999] [INFO] default - sending open rooms sessions
+[2021-10-30T00:03:57.636] [INFO] default - getting current rooms sessions
+[2021-10-30T00:03:57.636] [INFO] default - sending open rooms sessions
+[2021-10-30T00:03:57.636] [INFO] default - the user: ZM5IrjMSi29ZoGhgAABl has disconnecting
+[2021-10-30T00:03:57.723] [INFO] default - the user: bKI_jCS_sPyMihJ8AABp has connected
+[2021-10-30T00:03:57.723] [INFO] default - getting current rooms sessions
+[2021-10-30T00:03:57.723] [INFO] default - sending open rooms sessions
+[2021-10-30T00:03:59.236] [INFO] default - the user: bKI_jCS_sPyMihJ8AABp has join the room: 6df93c0f-f8b5-4ea0-a1c6-1e63b12cf415
+[2021-10-30T00:03:59.237] [INFO] default - getting current rooms sessions
+[2021-10-30T00:03:59.237] [INFO] default - getting current rooms sessions
+[2021-10-30T00:03:59.237] [INFO] default - sending open rooms sessions
+[2021-10-30T00:04:01.847] [INFO] default - the user: noi_bD3A7yWyAIIMAABn has join the room: 6df93c0f-f8b5-4ea0-a1c6-1e63b12cf415
+[2021-10-30T00:04:01.847] [INFO] default - getting current rooms sessions
+[2021-10-30T00:04:01.847] [INFO] default - getting current rooms sessions
+[2021-10-30T00:04:01.847] [INFO] default - sending open rooms sessions
