@@ -1,4 +1,5 @@
-import { useCallback, useEffect, useRef } from 'react';
+/* eslint-disable */
+import React, { useCallback, useEffect, useRef } from 'react';
 import { socket } from '../socket/socket';
 import actions from '../socket/socket-events';
 import { useCustomCB } from './customCB';

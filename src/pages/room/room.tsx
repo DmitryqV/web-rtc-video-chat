@@ -1,5 +1,6 @@
+// @ts-nocheck
 import React, { FC } from 'react';
-import { useParams } from 'react-router';
+import { useParams } from 'react-router-dom';
 import { webRTC } from '../../services/webrtc';
 import './room.css';
 
