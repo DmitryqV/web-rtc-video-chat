@@ -9,7 +9,7 @@ interface IRoomParam {
 
 const layout = (clientsNumber = 1) => {
   const pairs = Array.from({ length: clientsNumber })
-    .reduce((acc: string[], next, index: number, arr: any) => {
+    .reduce((acc: string[], _, index: number, arr: any) => {
       if (index % 2 === 0) {
         acc.push(arr.slice(index, index + 2));
       }

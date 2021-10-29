@@ -84,14 +84,19 @@ export const webRTC = (roomID) => {
   }, []);
 
   useEffect(() => {
+    /*
+      ===============================
+      fix it, remove peer dont working
+      ===============================
+    */
     socket.on(actions.removePeer, ({ peerID }) => {
       if (connections.current[peerID]) {
         connections.current[peerID].close();
       };
       delete connections.current[peerID];
       delete mediaElements.current[peerID];
-
       setUsers((list) => list.filter((u) => u !== peerID));
+      console.log(users);
     });
   }, []);
 
