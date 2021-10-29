@@ -15,7 +15,7 @@ export const UserAcccess: FC = () => {
     setState({ video: state.video, audio: !state.audio });
   };
 
-  const VideoController = () => {
+  const VideoController = async () => {
     setState({ video: !state.video, audio: state.audio });
   };
 

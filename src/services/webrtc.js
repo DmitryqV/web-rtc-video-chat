@@ -32,14 +32,10 @@ export const webRTC = (roomID) => {
           socket.emit(actions.relayIce, { peerID, iceCandidate: e.candidate });
         }
       };
-      let trackNumber = 0;
       connections.current[peerID].ontrack = ({ streams: [remoteStream] }) => {
-        trackNumber++;
-        if (trackNumber === 2) {
-          addNewUser(peerID, () => {
-            mediaElements.current[peerID].srcObject = remoteStream;
-          });
-        };
+        addNewUser(peerID, () => {
+          mediaElements.current[peerID].srcObject = remoteStream;
+        });
       };
       localStream.current.getTracks().forEach((track) => {
         connections.current[peerID].addTrack(track, localStream.current);
@@ -101,14 +97,8 @@ export const webRTC = (roomID) => {
   }, []);
 
   useEffect(() => {
-    const startRecord = async () => {
-      localStream.current = await navigator.mediaDevices.getUserMedia({
-        video: {
-          width: 800,
-          height: 600
-        },
-        audio: true
-      });
+    const startRecord = async ({ video, audio }) => {
+      localStream.current = await navigator.mediaDevices.getUserMedia({ video, audio });
       addNewUser(localRecord, () => {
         const videoElements = mediaElements.current[localRecord];
         console.warn(videoElements);
@@ -118,13 +108,16 @@ export const webRTC = (roomID) => {
         };
       });
     };
-    startRecord()
-      .then(() => {
-        socket.emit(actions.join, { room: roomID });
+
+    // connect to switcher in user-access / user-access.tsx;
+    startRecord({ video: true, audio: true })
+      .catch((e) => {
+        console.warn(e);
       })
-      .catch((err) => {
-        console.error(err);
+      .finally(() => {
+        socket.emit(actions.join, { room: roomID });
       });
+
     return () => {
       localStream.current.getTracks().forEach((track) => track.stop());
       socket.emit(actions.leave);
