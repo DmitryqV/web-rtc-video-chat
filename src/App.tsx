@@ -18,7 +18,7 @@ const App: FC = () => {
     if (window.location.pathname.includes('/room/')) {
       console.log(window.location.pathname.replace('/room/', ''));
     };
-  }, []);
+  });
 
   return (
     <BrowserRouter>
