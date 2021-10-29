@@ -107,8 +107,9 @@ export const webRTC = (roomID) => {
         };
       });
     };
-
+    // ====================================================
     // connect to switcher in user-access / user-access.tsx;
+    // ====================================================
     startRecord({ video: true, audio: true })
       .catch((e) => {
         console.warn(e);
