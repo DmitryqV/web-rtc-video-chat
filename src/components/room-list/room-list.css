@@ -16,7 +16,11 @@
   color: rgba(0, 0, 0, 0.38);
   margin: 23px 58px;
 }
-
+.room_list-items{
+  width: 100%;
+  height: calc(100% - 191px);
+  overflow-y: auto;
+}
 .room-list__item {
   cursor: pointer;
   width: 300px;
@@ -34,6 +38,7 @@
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
+  text-transform: uppercase;
   width: 48px;
   height: 48px;
   margin-bottom: 6px;
@@ -65,8 +70,8 @@
 }
 
 .room-list__item:hover .room-list__item-avatar {
-  color: #15C7FF;
-  background-color: #fff;
+  background-color: rgba(21, 200, 255, 0.75);
+  color: #fff;
 }
 
 .room-list__item:hover {
@@ -76,7 +81,7 @@
 .room-list__create{
   width: 48px;
   height: 48px;
-  background-color: #fff;
+  background-color: #ffffff;
   box-shadow: 0px 0px 10px rgba(21, 200, 255, 0.75);
   border-radius: 50%;
   position: absolute;
@@ -91,7 +96,7 @@
 .room-list__create:hover {
   color: #fff;
   background-color: #15c8ff;
-  box-shadow: 0;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.75);
 }
 
 .room-settings{
@@ -117,3 +122,34 @@ svg{
   fill: #f9f9f9;
 }
 
+.room-settings__item:hover{
+  background-color: #005f7c
+}
+
+.user-view{
+  width: 100%;
+  position: absolute;
+  bottom: 48px;
+  height: 60px;
+  background-color: rgba(21, 200, 255, 0.75);
+  border-top-right-radius: 50%;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  padding-left: 15px;
+  flex-direction: row;
+}
+
+.user-avatar{
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  background-color: #005f7c;
+}
+
+.user-name{
+  color: #005f7c;
+  font-size: 18px;
+  font-weight: bold;
+}
