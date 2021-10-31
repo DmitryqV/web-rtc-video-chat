@@ -21,17 +21,13 @@ const layout = (clientsNumber = 1) => {
   const height = `${100 / rowsNumber}%`;
 
   return pairs.map((row: any, index: number, arr: any) => {
-    if (index === arr.length - 1 && row.length === 1) {
-      return [{
-        width: '100%',
-        height,
-      }];
-    }
-
-    return row.map(() => ({
-      width: '50%',
-      height,
-    }));
+    return (index === arr.length - 1 && row.length === 1) ? (
+      [{ width: '100%', height, }]
+    ) : (
+      row.map(() => (
+        { width: '50%', height, }
+      ))
+    );
   }).flat();
 };
 
