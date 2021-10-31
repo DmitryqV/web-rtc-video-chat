@@ -16,8 +16,6 @@ npm run start
 ### Technologies that have been learned.
 - TypeScript
 - WebRTC
-- Socket IO
-- navigator events
 
 ## Features
 The peculiarity of this project is that it allows you to create a room for quick negotiations, all created rooms are visible to all users
