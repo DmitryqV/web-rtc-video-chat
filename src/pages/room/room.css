@@ -12,9 +12,10 @@
   display: grid;
   grid-template-columns: 400px 400px 400px;
   grid-template-rows:  300px 300px 300px;
-  gap: 10px;
+  gap: 20px;
   height: calc(100vh - 50px);
   width: 100%;
+  justify-content: center;
 }
 
 .user-video{

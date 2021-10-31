@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { webRTC } from '../../services/webrtc';
 import { RoomChat } from '../../components/room-chat/room-chat';
@@ -11,6 +11,14 @@ interface IRoomParam {
 export const RoomPage: FC = () => {
   const { id: roomId } = useParams<IRoomParam>();
   const { users, provideMedia }: any = webRTC(roomId);
+  useEffect(() => {
+    users.map((el: string) => {
+      const element = document.getElementById(el);
+      if (element) {
+        console.log(element.id, (element as HTMLVideoElement));
+      }
+    })
+  }, [users]);
 
   return (
     <>
@@ -18,26 +26,23 @@ export const RoomPage: FC = () => {
         <h5>Welcome to room page! {roomId}</h5>
       </header>
       <RoomChat />
-      <section>
-        <main className='view-content'>
-          {users.map((el: string, index: number) => {
-            return (
-              <div key={el + index} id={el}>
-                <video
-                  width='100%'
-                  height='100%'
-                  key={el}
-                  autoPlay
-                  playsInline
-                  muted={el === 'localhost'}
-                  className='user-video'
-                  ref={(inst) => provideMedia(el, inst)}
-                />
-              </div>
-            );
-          })}
-        </main>
-      </section>
+      <main className='view-content'>
+        {users.map((el: string) => {
+          return (
+            <video
+              key={el}
+              id={el}
+              width='100%'
+              height='100%'
+              autoPlay
+              playsInline
+              muted={el === 'localhost'}
+              className='user-video'
+              ref={(inst) => provideMedia(el, inst)}
+            />
+          );
+        })}
+      </main>
     </>
   );
 };
