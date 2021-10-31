@@ -17,7 +17,7 @@ if (process.env.NODE_ENV === 'production') {
   app.use(express.static('build'));
   app.get('*', (_: undefined, req: any) => {
     try {
-      req.sendStatus(200).sendFile(path.resolve(__dirname, 'build', 'index.html'));
+      req.sendFile(path.resolve(__dirname, 'build', 'index.html'));
       logger.info('build succeeded');
     } catch (e) {
       req.statusCode(404);
