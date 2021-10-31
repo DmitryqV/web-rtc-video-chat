@@ -9,10 +9,17 @@
 }
 
 .view-content{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  height: calc(100vh - 40px);
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows:  300px 300px 300px;
+  gap: 10px;
+  height: calc(100vh - 50px);
   width: 100%;
+}
+
+.user-video{
+  background-color: rgba(0, 95, 124, .75);
+  width: 100%;
+  transform: scale(-1, 1);
+  height: 100%;
 }

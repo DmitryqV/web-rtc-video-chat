@@ -128,6 +128,5 @@ export const webRTC = (roomID) => {
     console.log(id, node);
     mediaElements.current[id] = node;
   }, []);
-
   return { users, provideMedia };
 };
