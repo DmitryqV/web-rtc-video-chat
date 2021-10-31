@@ -17,6 +17,7 @@ export const RoomPage: FC = () => {
       if (element) {
         console.log(element.id, (element as HTMLVideoElement));
       }
+      return element;
     })
   }, [users]);
 
