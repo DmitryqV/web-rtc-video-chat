@@ -27,6 +27,5 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 server.listen(port, () => {
-  console.log(process.env.NODE_ENV);
   logger.info('server stated, port: ' + port)
 });
