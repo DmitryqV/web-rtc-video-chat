@@ -3,7 +3,6 @@ import log4js, { Logger } from "log4js";
 const logger: Logger = log4js.getLogger();
 logger.level = 'info';
 
-
 log4js.configure(
   (process.env.NODE_ENV === 'production') ? (
     {
@@ -24,7 +23,5 @@ log4js.configure(
     }
   )
 );
-
-
 
 export { logger };

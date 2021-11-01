@@ -21,12 +21,12 @@ if (process.env.NODE_ENV === 'production') {
       res.sendFile(path.resolve(__dirname, '..', 'build', 'index.html'));
       logger.info('build succeeded');
     } catch (e) {
-      res.sendStatus(404);
+      res.sendStatus(500);
       logger.error('building error, folder "build" not found in root dirictory.', e);
-    }
+    };
   });
 }
 
 server.listen(port, () => {
-  logger.info('server stated, port: ' + port)
+  logger.info('server stated, port: ' + port);
 });

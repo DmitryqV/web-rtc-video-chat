@@ -24,19 +24,20 @@ export const webRTC = (roomID) => {
         return null;
       };
 
-      connections.current[peerID] = new RTCPeerConnection({
-        iceServers: freeice()
-      });
+      connections.current[peerID] = new RTCPeerConnection({ iceServers: freeice() });
+
       connections.current[peerID].onicecandidate = (e) => {
         if (e.candidate) {
           socket.emit(actions.relayIce, { peerID, iceCandidate: e.candidate });
         }
       };
+
       connections.current[peerID].ontrack = ({ streams: [remoteStream] }) => {
         addNewUser(peerID, () => {
           mediaElements.current[peerID].srcObject = remoteStream;
         });
       };
+
       localStream.current.getTracks().forEach((track) => {
         connections.current[peerID].addTrack(track, localStream.current);
       });
@@ -45,10 +46,9 @@ export const webRTC = (roomID) => {
         const offer = await connections.current[peerID].createOffer();
         await connections.current[peerID].setLocalDescription(offer);
         socket.emit(actions.relaySdp, {
-          peerID,
-          sessionDescription: offer
+          peerID, sessionDescription: offer
         });
-      }
+      };
     };
 
     socket.on(actions.addPeer, newPeerHandler);
@@ -63,8 +63,7 @@ export const webRTC = (roomID) => {
         const answer = await connections.current[peerID].createAnswer();
         await connections.current[peerID].setLocalDescription(answer);
         socket.emit(actions.relaySdp, {
-          peerID,
-          sessionDescription: answer
+          peerID, sessionDescription: answer
         });
       };
     };
@@ -80,11 +79,6 @@ export const webRTC = (roomID) => {
   }, []);
 
   useEffect(() => {
-    /*
-      ===============================
-      fix it, remove peer dont working
-      ===============================
-    */
     socket.on(actions.removePeer, ({ peerID }) => {
       if (connections.current[peerID]) {
         connections.current[peerID].close();
