@@ -1,12 +1,16 @@
-module.exports = (server: any) => {
+import { Socket } from "socket.io";
+import { Server } from 'http';
+import { IRelayIce, IRelaySdp } from './socket-service.interfaces';
+import logger from "../log/logger";
+
+export const socketService = (server: Server) => {
   const io = require('socket.io')(server);
   const actions = require('../../src/socket/socket-events');
   const { version, validate } = require('uuid');
-  const logger = require("../log/logger");
 
-  const getRooms = () => {
+  const getRooms = (): string[] => {
     logger.info('getting current rooms sessions');
-    return Array.from(io.sockets.adapter.rooms.keys()).filter((roomID) => validate(roomID) && version(roomID) === 4);
+    return Array.from<string>(io.sockets.adapter.rooms.keys()).filter((roomID: string): boolean => validate(roomID) && version(roomID) === 4);
   };
 
   const shareRooms = () => {
@@ -14,11 +18,11 @@ module.exports = (server: any) => {
     logger.info('sending open rooms sessions');
   };
 
-  const leaveRoom = (socket: any) => {
+  const leaveRoom = (socket: Socket) => {
     const { rooms } = socket;
 
     rooms.forEach((roomID: string) => {
-      Array.from(io.sockets.adapter.rooms.get(roomID) || []).forEach((clientID) => {
+      Array.from<string>(io.sockets.adapter.rooms.get(roomID) || []).forEach((clientID: string) => {
         io.to(clientID).emit(actions.removePeer, {
           peerID: socket.id
         });
@@ -33,17 +37,17 @@ module.exports = (server: any) => {
     shareRooms();
   };
 
-  io.on('connection', (socket: any) => {
+  io.on('connection', (socket: Socket) => {
     logger.info(`the user: ${socket.id} has connected`);
     shareRooms();
 
-    socket.on(actions.join, (config: any) => {
+    socket.on(actions.join, (config: { room: string }) => {
       const { rooms: joinedRooms } = socket;
       const { room: roomID } = config;
 
-      if (!Array.from(joinedRooms).includes(roomID)) {
+      if (!Array.from<string>(joinedRooms).includes(roomID)) {
 
-        Array.from(io.sockets.adapter.rooms.get(roomID) || []).forEach((clientID) => {
+        Array.from<string>(io.sockets.adapter.rooms.get(roomID) || []).forEach((clientID: string) => {
           io.to(clientID).emit(actions.addPeer, {
             peerID: socket.id,
             createOffer: false
@@ -68,14 +72,14 @@ module.exports = (server: any) => {
       logger.info(`the user: ${socket.id} has disconnecting`);
     });
 
-    socket.on(actions.relaySdp, ({ peerID, sessionDescription }: any) => {
+    socket.on(actions.relaySdp, ({ peerID, sessionDescription }: IRelaySdp) => {
       io.to(peerID).emit(actions.sessionDescription, {
         peerID: socket.id,
         sessionDescription
       });
     });
 
-    socket.on(actions.relayIce, ({ peerID, iceCandidate }: any) => {
+    socket.on(actions.relayIce, ({ peerID, iceCandidate }: IRelayIce) => {
       io.to(peerID).emit(actions.iceCandidate, {
         peerID: socket.id,
         iceCandidate
