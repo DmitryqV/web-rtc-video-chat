@@ -1,12 +1,8 @@
 import React, { FC, useState } from 'react';
-
-interface iSettings {
-  video: boolean,
-  audio: boolean
-};
+import { ISettings } from './user-access-interface';
 
 export const UserAcccess: FC = () => {
-  const [state, setState] = useState<iSettings>({
+  const [state, setState] = useState<ISettings>({
     video: true,
     audio: true,
   });

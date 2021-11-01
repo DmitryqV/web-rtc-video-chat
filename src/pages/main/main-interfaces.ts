@@ -1,3 +1,3 @@
 export interface IRooms {
-  rooms: string[]
+  rooms: string[];
 };

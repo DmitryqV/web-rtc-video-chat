@@ -8,4 +8,4 @@ export interface IActions {
   relaySdp: string,
   iceCandidate: string,
   sessionDescription: string,
-}
+};

@@ -16,12 +16,14 @@
   color: rgba(0, 0, 0, 0.38);
   margin: 23px 58px;
 }
+
 .room_list-items{
   width: 100%;
   height: calc(100% - 191px);
   overflow-y: auto;
   overflow-x: hidden;
 }
+
 .room-list__item {
   cursor: pointer;
   width: 300px;
