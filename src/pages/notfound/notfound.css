@@ -1,0 +1,29 @@
+.notfound-class{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 50px;
+  width: 100%;
+  height: 100vh;
+  background-color: #15C7FF;
+}
+
+.notfound-title{
+  text-transform: uppercase;
+  color: #005f7c;
+}
+
+.notfound-btn{
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+  color: #fff;
+  width: 200px;
+  height: 40px;
+  background-color: #005f7c;
+}
+.notfound-btn:hover {
+  color: #005f7c;
+  background-color: #fff;
+}
