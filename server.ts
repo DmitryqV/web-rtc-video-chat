@@ -1,6 +1,6 @@
 import express, { Request, Response, Application } from 'express';
 import path from 'path';
-import logger from './server/log/logger';
+import { logger } from './server/log/logger';
 import http, { Server } from 'http';
 import { socketService } from './server/services/socket-service';
 const app: Application = express();
