@@ -1,5 +1,5 @@
 import React, { FC, useState } from 'react';
-import { ISettings } from './user-access-interface';
+import { ISettings } from './user-access.interfaces';
 
 export const UserAcccess: FC = () => {
   const [state, setState] = useState<ISettings>({

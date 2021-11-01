@@ -23,7 +23,7 @@ if (process.env.NODE_ENV === 'production') {
     } catch (e) {
       res.sendStatus(500);
       logger.error('building error, folder "build" not found in root dirictory.', e);
-    };
+    }
   });
 }
 

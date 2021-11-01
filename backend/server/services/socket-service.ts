@@ -10,7 +10,9 @@ export const socketService = (server: Server) => {
 
   const getRooms = (): string[] => {
     logger.info('getting current rooms sessions');
-    return Array.from<string>(io.sockets.adapter.rooms.keys()).filter((roomID: string): boolean => validate(roomID) && version(roomID) === 4);
+    return Array.from<string>(io.sockets.adapter.rooms.keys()).filter((roomID: string): boolean => {
+      return validate(roomID) && version(roomID) === 4;
+    });
   };
 
   const shareRooms = () => {
@@ -51,7 +53,6 @@ export const socketService = (server: Server) => {
 
       socket.join(roomID);
       logger.info(`the user: ${socket.id} has join the room: ${roomID}`);
-      getRooms();
       shareRooms();
     });
 

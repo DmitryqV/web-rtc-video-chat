@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { UserAcccess } from './user-access/user-access';
 import { useHistory } from 'react-router-dom';
-import { IRooms } from './room-list-interfaces';
+import { IRooms } from './room-list.interfaces';
 import { v4 } from 'uuid';
 import './room-list.css';
 

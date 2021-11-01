@@ -3,7 +3,7 @@ import { socket } from './socket/socket';
 import React, { FC, useEffect, useState } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { MainPage, RoomPage, NotFoundPage } from './pages/index';
-import { IRooms } from './app-interfaces';
+import { IRooms } from './app.interfaces';
 
 const App: FC = () => {
   const [rooms, updateRooms] = useState<string[]>([]);
