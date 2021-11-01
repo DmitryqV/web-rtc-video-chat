@@ -1,12 +1,15 @@
-[2021-11-02T00:26:33.809] [INFO] default - getting current rooms sessions
-[2021-11-02T00:26:33.810] [INFO] default - sending open rooms sessions
-[2021-11-02T00:26:33.811] [INFO] default - the user: 5RbiZxxHie9lTRbBAAAB has disconnecting
-[2021-11-02T00:26:34.220] [INFO] default - the user: WXZ2oNA0lbMrMOoXAAAD has connected
-[2021-11-02T00:26:34.221] [INFO] default - getting current rooms sessions
-[2021-11-02T00:26:34.222] [INFO] default - sending open rooms sessions
-[2021-11-02T00:26:40.581] [INFO] default - getting current rooms sessions
-[2021-11-02T00:26:40.581] [INFO] default - sending open rooms sessions
-[2021-11-02T00:26:40.582] [INFO] default - the user: WXZ2oNA0lbMrMOoXAAAD has disconnecting
-[2021-11-02T00:26:40.998] [INFO] default - the user: mvDlqdSm3zzpP0OeAAAF has connected
-[2021-11-02T00:26:40.999] [INFO] default - getting current rooms sessions
-[2021-11-02T00:26:40.999] [INFO] default - sending open rooms sessions
+[2021-11-02T00:29:42.967] [INFO] default - socket services loaded
+[2021-11-02T00:29:42.972] [INFO] default - server stated, port: 3001
+[2021-11-02T00:29:43.037] [INFO] default - the user: xV7rB1WN33gegHLeAAAB has connected
+[2021-11-02T00:29:43.038] [INFO] default - getting current rooms sessions
+[2021-11-02T00:29:43.039] [INFO] default - sending open rooms sessions
+[2021-11-02T00:30:12.502] [INFO] default - socket services loaded
+[2021-11-02T00:30:12.506] [INFO] default - server stated, port: 3001
+[2021-11-02T00:30:13.121] [INFO] default - the user: O1L0eqGBxfGfvLPJAAAB has connected
+[2021-11-02T00:30:13.122] [INFO] default - getting current rooms sessions
+[2021-11-02T00:30:13.123] [INFO] default - sending open rooms sessions
+[2021-11-02T00:30:19.414] [INFO] default - socket services loaded
+[2021-11-02T00:30:19.419] [INFO] default - server stated, port: 3001
+[2021-11-02T00:30:20.742] [INFO] default - the user: sg9JkJ3I-cxtbhwzAAAB has connected
+[2021-11-02T00:30:20.743] [INFO] default - getting current rooms sessions
+[2021-11-02T00:30:20.745] [INFO] default - sending open rooms sessions
