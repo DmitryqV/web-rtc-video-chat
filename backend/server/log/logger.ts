@@ -1,6 +1,5 @@
-import { Logger } from "log4js";
+import log4js, { Logger } from "log4js";
 
-const log4js = require("log4js");
 const logger: Logger = log4js.getLogger();
 logger.level = 'info';
 

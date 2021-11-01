@@ -14,12 +14,6 @@ const App: FC = () => {
     });
   }, [rooms]);
 
-  useEffect(() => {
-    if (window.location.pathname.includes('/room/')) {
-      console.log(window.location.pathname.replace('/room/', ''));
-    };
-  });
-
   return (
     <BrowserRouter>
       <Switch>

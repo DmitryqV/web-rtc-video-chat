@@ -46,7 +46,6 @@ export const socketService = (server: Server) => {
       const { room: roomID } = config;
 
       if (!Array.from<string>(joinedRooms).includes(roomID)) {
-
         Array.from<string>(io.sockets.adapter.rooms.get(roomID) || []).forEach((clientID: string) => {
           io.to(clientID).emit(actions.addPeer, {
             peerID: socket.id,

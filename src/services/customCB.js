@@ -1,4 +1,3 @@
-/* eslint-disable */
 import { useCallback, useEffect, useRef, useState } from 'react';
 
 export const useCustomCB = (init) => {
@@ -8,7 +7,7 @@ export const useCustomCB = (init) => {
   const update = useCallback((newState, cb) => {
     cbRef.current = cb;
     setState((prev) => typeof newState === 'function' ? newState(prev) : newState);
-  });
+  }, []);
 
   useEffect(() => {
     if (cbRef.current) {
