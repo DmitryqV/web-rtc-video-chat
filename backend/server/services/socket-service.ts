@@ -2,7 +2,7 @@ import { Socket } from "socket.io";
 import { Server } from 'http';
 import { IRelayIce, IRelaySdp } from './socket-service.interfaces';
 import { logger } from "../log/logger";
-import { actions } from '../../src/socket/socket-events';
+import { actions } from '../../../src/socket/socket-events';
 
 export const socketService = (server: Server) => {
   const io = require('socket.io')(server);
