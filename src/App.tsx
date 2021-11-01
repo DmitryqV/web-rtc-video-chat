@@ -6,7 +6,7 @@ import { MainPage, RoomPage, NotFoundPage } from './pages/index';
 import { IRooms } from './myInterfaces';
 
 const App: FC = () => {
-  const [rooms, updateRooms] = useState<string[]>();
+  const [rooms, updateRooms] = useState<string[]>([]);
 
   useEffect(() => {
     socket.on(actions.share, ({ rooms }: IRooms) => {
