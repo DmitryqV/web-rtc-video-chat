@@ -92,7 +92,6 @@ export const webRTC = (roomID) => {
       delete connections.current[peerID];
       delete mediaElements.current[peerID];
       setUsers((list) => list.filter((u) => u !== peerID));
-      console.log(users);
     });
   }, []);
 
@@ -101,7 +100,6 @@ export const webRTC = (roomID) => {
       localStream.current = await navigator.mediaDevices.getUserMedia({ video, audio });
       addNewUser(localRecord, () => {
         const videoElements = mediaElements.current[localRecord];
-        console.warn(videoElements);
         if (videoElements) {
           videoElements.volume = 0;
           videoElements.srcObject = localStream.current;
@@ -124,9 +122,10 @@ export const webRTC = (roomID) => {
       socket.emit(actions.leave);
     };
   }, [roomID]);
+
   const provideMedia = useCallback((id, node) => {
-    console.log(id, node);
     mediaElements.current[id] = node;
   }, []);
+
   return { users, provideMedia };
 };

@@ -1,13 +1,14 @@
-// @ts-ignore
-const express = require('express');
-const path = require('path');
-const logger = require('./server/log/logger');
-const app = express();
-const server = require('http').createServer(app);
+import express, { Request, Response, Application } from 'express';
+import path from 'path';
+import logger from './server/log/logger';
+import http, { Server } from 'http';
+import { socketService } from './server/services/socket-service';
+const app: Application = express();
+const server: Server = http.createServer(app);
 const port: string | number = process.env.PORT || 3001;
 
 try {
-  require('./server/services/socket-service')(server);
+  socketService(server);
   logger.info('socket services loaded');
 } catch (e) {
   logger.error('socket services not loaded!', e);
@@ -15,12 +16,12 @@ try {
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('build'));
-  app.get('*', (_: undefined, req: any) => {
+  app.get('*', (_: Request, res: Response) => {
     try {
-      req.sendFile(path.resolve(__dirname, 'build', 'index.html'));
+      res.sendFile(path.resolve(__dirname, 'build', 'index.html'));
       logger.info('build succeeded');
     } catch (e) {
-      req.statusCode(404);
+      res.sendStatus(404);
       logger.error('building error, folder "build" not found in root dirictory.', e);
     }
   });

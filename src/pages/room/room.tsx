@@ -11,14 +11,9 @@ interface IRoomParam {
 export const RoomPage: FC = () => {
   const { id: roomId } = useParams<IRoomParam>();
   const { users, provideMedia }: any = webRTC(roomId);
+
   useEffect(() => {
-    users.map((el: string) => {
-      const element = document.getElementById(el);
-      if (element) {
-        console.log(element.id, (element as HTMLVideoElement));
-      }
-      return element;
-    })
+    console.log(users);
   }, [users]);
 
   return (

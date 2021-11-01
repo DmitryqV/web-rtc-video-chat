@@ -1,0 +1,155 @@
+[2021-11-01T16:40:34.786] [ERROR] default - socket services not loaded! [96mserver/services/socket-service.ts[0m:[93m1[0m:[93m1[0m - [91merror[0m[90m TS1208: [0mAll files must be modules when the '--isolatedModules' flag is provided.
+
+[7m1[0m module.exports = (server: any) => {
+[7m [0m [91m~~~~~~[0m
+
+[2021-11-01T16:40:34.789] [INFO] default - server stated, port: 3001
+[2021-11-01T16:41:25.097] [ERROR] default - socket services not loaded! [96mserver/services/socket-service.ts[0m:[93m1[0m:[93m1[0m - [91merror[0m[90m TS1208: [0mAll files must be modules when the '--isolatedModules' flag is provided.
+
+[7m1[0m module.exports = (server: any) => {
+[7m [0m [91m~~~~~~[0m
+
+[2021-11-01T16:41:25.100] [INFO] default - server stated, port: 3001
+[2021-11-01T17:04:56.950] [ERROR] default - socket services not loaded! [96mserver/services/socket-service.ts[0m:[93m1[0m:[93m1[0m - [91merror[0m[90m TS1208: [0mAll files must be modules when the '--isolatedModules' flag is provided.
+
+[7m1[0m module.exports = (server: any) => {
+[7m [0m [91m~~~~~~[0m
+
+[2021-11-01T17:04:56.953] [INFO] default - server stated, port: 3001
+[2021-11-01T17:05:36.389] [ERROR] default - socket services not loaded! [96mserver/services/socket-service.ts[0m:[93m1[0m:[93m1[0m - [91merror[0m[90m TS1208: [0mAll files must be modules when the '--isolatedModules' flag is provided.
+
+[7m1[0m module.exports = (server: any) => {
+[7m [0m [91m~~~~~~[0m
+
+[2021-11-01T17:05:36.392] [INFO] default - server stated, port: 3001
+[2021-11-01T17:06:04.729] [ERROR] default - socket services not loaded! [96mserver/services/socket-service.ts[0m:[93m1[0m:[93m1[0m - [91merror[0m[90m TS1208: [0mAll files must be modules when the '--isolatedModules' flag is provided.
+
+[7m1[0m module.exports = (server: any) => {
+[7m [0m [91m~~~~~~[0m
+
+[2021-11-01T17:06:04.733] [INFO] default - server stated, port: 3001
+[2021-11-01T17:06:32.504] [ERROR] default - socket services not loaded! [96mserver/services/socket-service.ts[0m:[93m1[0m:[93m1[0m - [91merror[0m[90m TS1208: [0mAll files must be modules when the '--isolatedModules' flag is provided.
+
+[7m1[0m module.exports = (server: any) => {
+[7m [0m [91m~~~~~~[0m
+
+[2021-11-01T17:06:32.507] [INFO] default - server stated, port: 3001
+[2021-11-01T17:06:42.789] [ERROR] default - socket services not loaded! [96mserver/services/socket-service.ts[0m:[93m1[0m:[93m1[0m - [91merror[0m[90m TS1208: [0mAll files must be modules when the '--isolatedModules' flag is provided.
+
+[7m1[0m module.exports = (server: any) => {
+[7m [0m [91m~~~~~~[0m
+
+[2021-11-01T17:06:42.792] [INFO] default - server stated, port: 3001
+[2021-11-01T17:07:07.563] [ERROR] default - socket services not loaded! [96mserver/services/socket-service.ts[0m:[93m1[0m:[93m1[0m - [91merror[0m[90m TS1208: [0mAll files must be modules when the '--isolatedModules' flag is provided.
+
+[7m1[0m module.exports = (server: any) => {
+[7m [0m [91m~~~~~~[0m
+
+[2021-11-01T17:07:07.566] [INFO] default - server stated, port: 3001
+[2021-11-01T17:07:50.921] [ERROR] default - socket services not loaded! [96mserver/services/socket-service.ts[0m:[93m1[0m:[93m1[0m - [91merror[0m[90m TS1208: [0mAll files must be modules when the '--isolatedModules' flag is provided.
+
+[7m1[0m module.exports = (server: any) => {
+[7m [0m [91m~~~~~~[0m
+
+[2021-11-01T17:07:50.924] [INFO] default - server stated, port: 3001
+[2021-11-01T17:09:07.203] [ERROR] default - socket services not loaded! TypeError: require(...) is not a function
+    at Object.<anonymous> (/home/dvlasenko/Desktop/web-rtc-video-chat/server.ts:10:46)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Module.m._compile (/home/dvlasenko/Desktop/web-rtc-video-chat/node_modules/ts-node/src/index.ts:1371:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Object.require.extensions.<computed> [as .ts] (/home/dvlasenko/Desktop/web-rtc-video-chat/node_modules/ts-node/src/index.ts:1374:12)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:79:12)
+    at main (/home/dvlasenko/Desktop/web-rtc-video-chat/node_modules/ts-node/src/bin.ts:331:12)
+    at Object.<anonymous> (/home/dvlasenko/Desktop/web-rtc-video-chat/node_modules/ts-node/src/bin.ts:482:3)
+[2021-11-01T17:09:07.226] [INFO] default - server stated, port: 3001
+[2021-11-01T17:09:41.940] [INFO] default - socket services loaded
+[2021-11-01T17:09:41.943] [INFO] default - server stated, port: 3001
+[2021-11-01T17:10:47.132] [INFO] default - socket services loaded
+[2021-11-01T17:10:47.135] [INFO] default - server stated, port: 3001
+[2021-11-01T17:11:05.435] [INFO] default - socket services loaded
+[2021-11-01T17:11:05.438] [INFO] default - server stated, port: 3001
+[2021-11-01T17:11:42.314] [INFO] default - socket services loaded
+[2021-11-01T17:11:42.317] [INFO] default - server stated, port: 3001
+[2021-11-01T17:12:38.891] [INFO] default - socket services loaded
+[2021-11-01T17:12:38.894] [INFO] default - server stated, port: 3001
+[2021-11-01T17:12:58.643] [INFO] default - socket services loaded
+[2021-11-01T17:12:58.646] [INFO] default - server stated, port: 3001
+[2021-11-01T17:13:55.440] [INFO] default - socket services loaded
+[2021-11-01T17:13:55.443] [INFO] default - server stated, port: 3001
+[2021-11-01T17:14:00.719] [INFO] default - socket services loaded
+[2021-11-01T17:14:00.721] [INFO] default - server stated, port: 3001
+[2021-11-01T17:14:24.646] [INFO] default - socket services loaded
+[2021-11-01T17:14:24.649] [INFO] default - server stated, port: 3001
+[2021-11-01T17:14:35.527] [INFO] default - socket services loaded
+[2021-11-01T17:14:35.530] [INFO] default - server stated, port: 3001
+[2021-11-01T17:16:31.242] [INFO] default - socket services loaded
+[2021-11-01T17:16:31.245] [INFO] default - server stated, port: 3001
+[2021-11-01T17:17:05.612] [INFO] default - socket services loaded
+[2021-11-01T17:17:05.615] [INFO] default - server stated, port: 3001
+[2021-11-01T17:19:04.607] [INFO] default - socket services loaded
+[2021-11-01T17:19:04.610] [INFO] default - server stated, port: 3001
+[2021-11-01T17:19:42.375] [INFO] default - socket services loaded
+[2021-11-01T17:19:42.378] [INFO] default - server stated, port: 3001
+[2021-11-01T17:20:09.663] [INFO] default - socket services loaded
+[2021-11-01T17:20:09.666] [INFO] default - server stated, port: 3001
+[2021-11-01T17:20:30.734] [INFO] default - socket services loaded
+[2021-11-01T17:20:30.737] [INFO] default - server stated, port: 3001
+[2021-11-01T17:20:58.339] [INFO] default - socket services loaded
+[2021-11-01T17:20:58.342] [INFO] default - server stated, port: 3001
+[2021-11-01T17:21:05.615] [INFO] default - socket services loaded
+[2021-11-01T17:21:05.617] [INFO] default - server stated, port: 3001
+[2021-11-01T17:21:16.589] [INFO] default - socket services loaded
+[2021-11-01T17:21:16.592] [INFO] default - server stated, port: 3001
+[2021-11-01T17:21:22.244] [INFO] default - socket services loaded
+[2021-11-01T17:21:22.247] [INFO] default - server stated, port: 3001
+[2021-11-01T17:23:04.755] [INFO] default - socket services loaded
+[2021-11-01T17:23:04.758] [INFO] default - server stated, port: 3001
+[2021-11-01T17:23:08.519] [INFO] default - socket services loaded
+[2021-11-01T17:23:08.522] [INFO] default - server stated, port: 3001
+[2021-11-01T17:23:48.506] [INFO] default - socket services loaded
+[2021-11-01T17:23:48.509] [INFO] default - server stated, port: 3001
+[2021-11-01T17:24:32.193] [INFO] default - socket services loaded
+[2021-11-01T17:24:32.196] [INFO] default - server stated, port: 3001
+[2021-11-01T17:24:47.215] [INFO] default - socket services loaded
+[2021-11-01T17:24:47.218] [INFO] default - server stated, port: 3001
+[2021-11-01T17:26:56.963] [INFO] default - socket services loaded
+[2021-11-01T17:26:56.966] [INFO] default - server stated, port: 3001
+[2021-11-01T17:28:03.138] [INFO] default - socket services loaded
+[2021-11-01T17:28:03.142] [INFO] default - server stated, port: 3001
+[2021-11-01T17:28:22.585] [INFO] default - socket services loaded
+[2021-11-01T17:28:22.588] [INFO] default - server stated, port: 3001
+[2021-11-01T17:28:54.438] [INFO] default - socket services loaded
+[2021-11-01T17:28:54.441] [INFO] default - server stated, port: 3001
+[2021-11-01T17:30:14.264] [INFO] default - socket services loaded
+[2021-11-01T17:30:14.267] [INFO] default - server stated, port: 3001
+[2021-11-01T17:30:14.784] [INFO] default - the user: ZgV05Z6R6yPEU_U6AAAB has connected
+[2021-11-01T17:30:14.784] [INFO] default - getting current rooms sessions
+[2021-11-01T17:30:14.785] [INFO] default - sending open rooms sessions
+[2021-11-01T17:30:14.787] [INFO] default - the user: ZgV05Z6R6yPEU_U6AAAB has join the room: 1a5a09d3-2710-4497-9b5b-bb1dcebe7120
+[2021-11-01T17:30:14.788] [INFO] default - getting current rooms sessions
+[2021-11-01T17:30:14.789] [INFO] default - getting current rooms sessions
+[2021-11-01T17:30:14.789] [INFO] default - sending open rooms sessions
+[2021-11-01T17:30:22.488] [INFO] default - the user: dpvIz664JMRyxunqAAAD has connected
+[2021-11-01T17:30:22.488] [INFO] default - getting current rooms sessions
+[2021-11-01T17:30:22.489] [INFO] default - sending open rooms sessions
+[2021-11-01T17:30:25.256] [INFO] default - the user: dpvIz664JMRyxunqAAAD has join the room: 1a5a09d3-2710-4497-9b5b-bb1dcebe7120
+[2021-11-01T17:30:25.256] [INFO] default - getting current rooms sessions
+[2021-11-01T17:30:25.256] [INFO] default - getting current rooms sessions
+[2021-11-01T17:30:25.256] [INFO] default - sending open rooms sessions
+[2021-11-01T17:30:34.942] [INFO] default - getting current rooms sessions
+[2021-11-01T17:30:34.942] [INFO] default - sending open rooms sessions
+[2021-11-01T17:30:34.942] [INFO] default - the user: dpvIz664JMRyxunqAAAD has disconnecting
+[2021-11-01T17:30:37.335] [INFO] default - the user: ZgV05Z6R6yPEU_U6AAAB has left the room: ZgV05Z6R6yPEU_U6AAAB
+[2021-11-01T17:30:37.335] [INFO] default - the user: ZgV05Z6R6yPEU_U6AAAB has left the room: 1a5a09d3-2710-4497-9b5b-bb1dcebe7120
+[2021-11-01T17:30:37.335] [INFO] default - getting current rooms sessions
+[2021-11-01T17:30:37.335] [INFO] default - sending open rooms sessions
+[2021-11-01T17:32:54.589] [INFO] default - socket services loaded
+[2021-11-01T17:32:54.592] [INFO] default - server stated, port: 3001
+[2021-11-01T17:33:49.019] [INFO] default - the user: vWmnShN6pdUYMfEeAAAB has connected
+[2021-11-01T17:33:49.020] [INFO] default - getting current rooms sessions
+[2021-11-01T17:33:49.023] [INFO] default - sending open rooms sessions
+[2021-11-01T17:33:51.936] [INFO] default - the user: TBaINxlrxocJ5DIrAAAD has connected
+[2021-11-01T17:33:51.936] [INFO] default - getting current rooms sessions
+[2021-11-01T17:33:51.937] [INFO] default - sending open rooms sessions
