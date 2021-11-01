@@ -6,7 +6,7 @@ This project was developed on the pure enthusiasm of the author.
 
 ### start app
 ```sh
-npm run start-app
+npm run start:app
 ```
 ### start server
 ```sh
