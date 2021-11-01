@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { RoomList } from '../../components/room-list/room-list';
-import { IRooms } from '../../myInterfaces';
+import { IRooms } from './main-interfaces';
 
 import './main.css';
 
