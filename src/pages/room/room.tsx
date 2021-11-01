@@ -1,9 +1,13 @@
-import React, { FC } from 'react';
+import React, { FC, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { webRTC } from '../../services/webrtc';
 import { RoomChat } from '../../components/room-chat/room-chat';
+import { Link } from 'react-router-dom';
+import { actions } from '../../socket/socket-events';
+import { socket } from '../../socket/socket';
 import { IRoomParam, IWebRTC } from './room-interfaces';
 import './room.css';
+
 
 export const RoomPage: FC = () => {
   const { id: roomId } = useParams<IRoomParam>();
@@ -12,6 +16,11 @@ export const RoomPage: FC = () => {
   return (
     <>
       <header className='room-header'>
+        <Link to='/'>
+          <button className='room-leave' onClick={() => socket.emit(actions.leave)}>
+            leave
+          </button>
+        </Link>
         <h5>Welcome to room page! {roomId}</h5>
       </header>
       <RoomChat />

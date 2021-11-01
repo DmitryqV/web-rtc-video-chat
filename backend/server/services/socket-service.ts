@@ -23,12 +23,8 @@ export const socketService = (server: Server) => {
 
     rooms.forEach((roomID: string) => {
       Array.from<string>(io.sockets.adapter.rooms.get(roomID) || []).forEach((clientID: string) => {
-        io.to(clientID).emit(actions.removePeer, {
-          peerID: socket.id
-        });
-        socket.emit(actions.removePeer, {
-          peerID: clientID
-        });
+        io.to(clientID).emit(actions.removePeer, { peerID: socket.id });
+        socket.emit(actions.removePeer, { peerID: clientID });
       });
 
       logger.info(`the user: ${socket.id} has left the room: ${roomID}`);
@@ -42,25 +38,20 @@ export const socketService = (server: Server) => {
     shareRooms();
 
     socket.on(actions.join, (config: { room: string }) => {
-      const { rooms: joinedRooms } = socket;
       const { room: roomID } = config;
 
-      if (!Array.from<string>(joinedRooms).includes(roomID)) {
-        Array.from<string>(io.sockets.adapter.rooms.get(roomID) || []).forEach((clientID: string) => {
-          io.to(clientID).emit(actions.addPeer, {
-            peerID: socket.id,
-            createOffer: false
-          });
-          socket.emit(actions.addPeer, {
-            peerID: clientID,
-            createOffer: true
-          });
+      Array.from<string>(io.sockets.adapter.rooms.get(roomID) || []).forEach((clientID: string) => {
+        io.to(clientID).emit(actions.addPeer, {
+          peerID: socket.id, createOffer: false
         });
+        socket.emit(actions.addPeer, {
+          peerID: clientID, createOffer: true
+        });
+      });
 
-        socket.join(roomID);
-        logger.info(`the user: ${socket.id} has join the room: ${roomID}`);
-        getRooms();
-      };
+      socket.join(roomID);
+      logger.info(`the user: ${socket.id} has join the room: ${roomID}`);
+      getRooms();
       shareRooms();
     });
 
@@ -73,15 +64,13 @@ export const socketService = (server: Server) => {
 
     socket.on(actions.relaySdp, ({ peerID, sessionDescription }: IRelaySdp) => {
       io.to(peerID).emit(actions.sessionDescription, {
-        peerID: socket.id,
-        sessionDescription
+        peerID: socket.id, sessionDescription
       });
     });
 
     socket.on(actions.relayIce, ({ peerID, iceCandidate }: IRelayIce) => {
       io.to(peerID).emit(actions.iceCandidate, {
-        peerID: socket.id,
-        iceCandidate
+        peerID: socket.id, iceCandidate
       });
     });
 

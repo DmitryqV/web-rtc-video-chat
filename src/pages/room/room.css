@@ -4,7 +4,7 @@
   background-color: #15c8ff;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   color: #005f7c
 }
 
@@ -23,4 +23,18 @@
   width: 100%;
   transform: scale(-1, 1);
   height: 100%;
+}
+
+.room-leave {
+  background-color: #005f7c;
+  color: #fff;
+  border-radius: 4px;
+  width: 100px;
+  height: 30px;
+  font-weight: 600;
+}
+
+.room-leave:hover{
+  background-color: #f76161;
+  cursor: pointer;
 }
