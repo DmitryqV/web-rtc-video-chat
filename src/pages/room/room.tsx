@@ -1,20 +1,13 @@
-import React, { FC, useEffect } from 'react';
+import React, { FC } from 'react';
 import { useParams } from 'react-router-dom';
 import { webRTC } from '../../services/webrtc';
 import { RoomChat } from '../../components/room-chat/room-chat';
+import { IRoomParam, IWebRTC } from './room-interfaces';
 import './room.css';
-
-interface IRoomParam {
-  id: string
-};
 
 export const RoomPage: FC = () => {
   const { id: roomId } = useParams<IRoomParam>();
-  const { users, provideMedia }: any = webRTC(roomId);
-
-  useEffect(() => {
-    console.log(users);
-  }, [users]);
+  const { users, provideMedia }: IWebRTC = webRTC(roomId);
 
   return (
     <>
