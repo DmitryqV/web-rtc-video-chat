@@ -1,4 +1,4 @@
-import { IActions } from "./socket-events.interface";
+import { IActions } from "./socket-events.interfaces";
 export const actions: IActions = {
   join: 'join',
   leave: 'leave',
