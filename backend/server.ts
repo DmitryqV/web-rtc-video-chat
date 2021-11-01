@@ -13,7 +13,7 @@ try {
 } catch (e) {
   logger.error('socket services not loaded!', e);
 }
-
+process.env.NODE_ENV = 'production'
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('build'));
   app.get('*', (_: Request, res: Response) => {

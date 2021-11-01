@@ -30,7 +30,7 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "nodemon backend/server.ts",
+    "start": "npx nodemon backend/server.ts",
     "start-app": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
