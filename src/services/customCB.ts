@@ -6,7 +6,9 @@ export const useCustomCB = (init: string) => {
 
   const update = useCallback((newState: Function | string, cb: Function): void => {
     cbRef.current = cb;
-    setState((prev: Function | string): string => typeof newState === 'function' ? newState(prev) : newState);
+    setState((prev: Function | string): string => {
+      return typeof newState === 'function' ? newState(prev) : newState;
+    });
   }, []);
 
   useEffect(() => {

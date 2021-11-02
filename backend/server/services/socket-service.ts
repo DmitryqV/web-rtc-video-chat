@@ -9,7 +9,6 @@ export const socketService = (server: Server) => {
   const { version, validate } = require('uuid');
 
   const getRooms = (): string[] => {
-    logger.info('getting current rooms sessions');
     return Array.from<string>(io.sockets.adapter.rooms.keys()).filter((roomID: string): boolean => {
       return validate(roomID) && version(roomID) === 4;
     });
@@ -53,15 +52,11 @@ export const socketService = (server: Server) => {
 
       socket.join(roomID);
       logger.info(`the user: ${socket.id} has join the room: ${roomID}`);
-      shareRooms();
     });
 
     socket.on(actions.leave, () => leaveRoom(socket));
 
-    socket.on('disconnect', () => {
-      leaveRoom(socket);
-      logger.info(`the user: ${socket.id} has disconnecting`);
-    });
+    socket.on('disconnect', () => leaveRoom(socket));
 
     socket.on(actions.relaySdp, ({ peerID, sessionDescription }: IRelaySdp) => {
       io.to(peerID).emit(actions.sessionDescription, {

@@ -7,7 +7,6 @@ import { socket } from '@socket/socket';
 import { IRoomParam, IWebRTC } from './room.interfaces';
 import './room.css';
 
-
 export const RoomPage: FC = () => {
   const { id: roomId } = useParams<IRoomParam>();
   const { users, provideMedia }: IWebRTC = webRTC(roomId);
@@ -28,7 +27,6 @@ export const RoomPage: FC = () => {
           return (
             <video
               key={el}
-              id={el}
               width='100%'
               height='100%'
               autoPlay

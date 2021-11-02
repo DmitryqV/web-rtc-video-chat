@@ -3,6 +3,7 @@ import path from 'path';
 import { logger } from './server/log/logger';
 import http, { Server } from 'http';
 import { socketService } from './server/services/socket-service';
+
 const app: Application = express();
 const server: Server = http.createServer(app);
 const port: string | number = process.env.PORT || 3001;
