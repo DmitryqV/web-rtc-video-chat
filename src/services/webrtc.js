@@ -29,7 +29,7 @@ export const webRTC = (roomID) => {
       connections.current[peerID].onicecandidate = (e) => {
         if (e.candidate) {
           socket.emit(actions.relayIce, { peerID, iceCandidate: e.candidate });
-        }
+        };
       };
 
       connections.current[peerID].ontrack = ({ streams: [remoteStream] }) => {
