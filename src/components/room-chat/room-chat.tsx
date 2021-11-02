@@ -5,7 +5,7 @@ export const RoomChat: FC = () => {
   return (
     <>
       <section className='room-chat'>
-        1
+        there will be a chat here
       </section>
     </>
   );
