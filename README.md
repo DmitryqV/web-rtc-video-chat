@@ -1,7 +1,6 @@
 ### The WRVC
 ## Video Audio Chat on  ✨WebRTC✨
 
-This project was created to study new technologies.
 This project was developed on the pure enthusiasm of the author.
 
 ### start app
