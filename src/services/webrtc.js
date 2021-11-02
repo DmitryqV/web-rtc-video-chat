@@ -1,7 +1,7 @@
 /* eslint-disable */
 import { useCallback, useEffect, useRef } from 'react';
-import { socket } from '../socket/socket';
-import { actions } from '../socket/socket-events.ts';
+import { socket } from '@socket/socket';
+import { actions } from '@socket/socket-events.ts';
 import { useCustomCB } from './customCB.ts';
 import freeice from 'freeice';
 const localRecord = 'localhost';

@@ -1,9 +1,9 @@
 import React, { FC } from 'react';
-import { webRTC } from '../../services/webrtc';
-import { RoomChat } from '../../components/room-chat/room-chat';
+import { webRTC } from '@services/webrtc';
+import { RoomChat } from '@components/room-chat/room-chat';
 import { Link, useParams } from 'react-router-dom';
-import { actions } from '../../socket/socket-events';
-import { socket } from '../../socket/socket';
+import { actions } from '@socket/socket-events';
+import { socket } from '@socket/socket';
 import { IRoomParam, IWebRTC } from './room.interfaces';
 import './room.css';
 

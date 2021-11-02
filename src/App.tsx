@@ -1,8 +1,8 @@
-import { actions } from './socket/socket-events';
-import { socket } from './socket/socket';
+import { actions } from '@socket/socket-events';
+import { socket } from '@socket/socket';
 import React, { FC, useEffect, useState } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import { MainPage, RoomPage, NotFoundPage } from './pages/index';
+import { MainPage, RoomPage, NotFoundPage } from '@pages/index';
 import { IRooms } from './app.interfaces';
 
 const App: FC = () => {
