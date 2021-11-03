@@ -1,20 +1,6 @@
-import React, { FC, useState } from 'react';
-import { ISettings } from './user-access.interfaces';
-
+import React, { FC } from 'react';
+import { AudioController, VideoController } from './user-access.script';
 export const UserAcccess: FC = () => {
-  const [state, setState] = useState<ISettings>({
-    video: true,
-    audio: true,
-  });
-
-  const AudioController = () => {
-    setState({ video: state.video, audio: !state.audio });
-  };
-
-  const VideoController = async () => {
-    setState({ video: !state.video, audio: state.audio });
-  };
-
   return (
     <>
       <section className='user-view'>

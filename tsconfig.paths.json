@@ -16,6 +16,9 @@
       ],
       "@pages/*": [
         "./src/pages/*"
+      ],
+      "@access/*": [
+        "./src/components/room-list/user-access/*"
       ]
     }
   }
