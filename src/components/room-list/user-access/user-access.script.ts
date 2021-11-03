@@ -6,8 +6,10 @@ const MediaConfig: ISettings = {
 
 export const AudioController = () => {
   MediaConfig.audio = !MediaConfig.audio;
+  return MediaConfig;
 };
 
 export const VideoController = () => {
   MediaConfig.video = !MediaConfig.video;
+  return MediaConfig;
 };
