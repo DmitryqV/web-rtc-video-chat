@@ -12,7 +12,7 @@ export const Message: FC<iMessage> = ({ text, author }) => {
       <div className='message-author_img'></div>
       <div className='message-content'>
         <p className='message-author'>{author}</p>
-        <p>{text}</p>
+        <p className='message-text'>{text}</p>
       </div>
     </div>
   );
