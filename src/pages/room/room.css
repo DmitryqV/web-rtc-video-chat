@@ -1,15 +1,3 @@
-.room-header{
-  width: 100%;
-  height: 40px;
-  background-color: #15c8ff;
-  display: flex;
-  align-items: center;
-  position: fixed;
-  justify-content: space-evenly;
-  color: #005f7c;
-  top: 0px;
-}
-
 .view-content{
   position: absolute;
   top: 60px;
