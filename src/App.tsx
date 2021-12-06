@@ -10,7 +10,7 @@ const App: FC = () => {
 
   useEffect(() => {
     socket.on(actions.share, ({ rooms }: IRooms) => {
-      if (rooms !== undefined) updateRooms(rooms);
+      if (rooms) updateRooms(rooms);
     });
   }, [rooms]);
 
