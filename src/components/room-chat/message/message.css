@@ -1,0 +1,26 @@
+.message {
+  width: calc(100% - 10px);
+  min-height: 30px;
+  max-height: auto;
+  padding: 5px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.message-author_img{
+  width: 32px;
+  height: 32px;
+  background-color: #005f7c;
+  border-radius: 5px;
+}
+
+.message-author{
+  font-weight: bold;
+}
+
+.message-content{
+  max-width: 221px;
+}
