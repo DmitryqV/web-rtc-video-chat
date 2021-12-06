@@ -4,18 +4,22 @@
   background-color: #15c8ff;
   display: flex;
   align-items: center;
+  position: fixed;
   justify-content: space-evenly;
   color: #005f7c
 }
 
 .view-content{
+  position: absolute;
+  top: 60px;
   display: grid;
-  grid-template-columns: 400px 400px 400px;
-  grid-template-rows:  300px 300px 300px;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows:  150px 150px 150px;
   gap: 20px;
-  height: calc(100vh - 50px);
-  width: 100%;
-  justify-content: center;
+  height: calc(100vh - 60px);
+  width: calc(100% - 400px);
+  justify-content: start;
+  padding-left: 50px;
 }
 
 .user-video{
@@ -35,6 +39,7 @@
 }
 
 .room-leave:hover{
-  background-color: #f76161;
+  background-color: #fff;
+  color: #005f7c;
   cursor: pointer;
 }

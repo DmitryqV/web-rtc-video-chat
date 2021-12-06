@@ -137,7 +137,7 @@ svg{
   height: 60px;
   background-color: rgba(21, 200, 255, 0.75);
   border-top-right-radius: 50%;
-  gap: 20px;
+  gap: 5px;
   align-items: center;
   justify-content: flex-start;
   display: flex;
@@ -154,6 +154,6 @@ svg{
 
 .user-name{
   color: #005f7c;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
 }
