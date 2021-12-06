@@ -21,7 +21,7 @@ export const RoomPage: FC = () => {
         </Link>
         <h5>Welcome to room page! {roomId}</h5>
       </header>
-      <RoomChat />
+      <RoomChat roomId={roomId} />
       <main className='view-content'>
         {users.filter((val: string, index: number, arr: string[]) => arr[index] !== arr[index + 1]).map((el: string) => {
           return (
