@@ -1,24 +1,46 @@
-import React, { FC } from 'react';
+import React, { FC, useState, useEffect } from 'react';
 import './room-chat.css';
+import { socket } from '@socket/socket';
 import { Message } from './message/message';
-export const RoomChat: FC = () => {
+import { actions } from '@socket/socket-events';
+
+interface iMessage {
+  author: string;
+  message: string;
+};
+
+interface iChatRoom {
+  roomId: string;
+};
+
+export const RoomChat: FC<iChatRoom> = (roomId) => {
+  const [messages, setMessages] = useState<iMessage[]>([]);
+  const [text, setText] = useState<string>('');
+  useEffect(() => {
+    socket.on(actions.newMessage, ({ message, author }) => {
+      setMessages((prev) => [...prev, { message, author }]);
+      setText('');
+    });
+  }, []);
+
+  const sendMessage = (message: string) => {
+    socket.emit(actions.sendMessage, { message, author: socket.id, roomId });
+  };
+
   return (
     <div className='room-chat_shadow'>
       <section className='room-chat'>
-        <Message text='my message Hello world my message Hello worldmy message Hello worldmy message Hello worldmy message Hello world' author='DmitryqV' />
-        <Message text='my message Hello world' author='DmitryqV' />
-        <Message text='my message Hello world' author='DmitryqV' />
-        <Message text='my message Hello world' author='DmitryqV' />
-        <Message text='my message Hello world' author='DmitryqV' />
-        <Message text='my message Hello world' author='DmitryqV' />
-        <Message text='my message Hello world' author='DmitryqV' />
-        <Message text='my message Hello world' author='DmitryqV' />
-        <Message text='my message Hello world' author='DmitryqV' />
-        <Message text='my message Hello world' author='DmitryqV' />
-        <Message text='my message Hello world' author='DmitryqV' />
+        {messages.map((element, index) => {
+          return <Message key={index + element.author} text={element.message} author={element.author} />
+        })}
       </section>
       <section className='chat-input'>
-        <textarea className='chat-input_textarea'></textarea>
+        <textarea
+          className='chat-input_textarea'
+          onKeyDown={(e) => e.keyCode === 13 && sendMessage(text)}
+          onChange={(e) => setText(e.target.value)}
+          value={text}
+        ></textarea>
       </section>
     </div>
   );

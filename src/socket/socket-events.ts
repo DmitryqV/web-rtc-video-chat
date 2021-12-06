@@ -10,4 +10,6 @@ export const actions: IActions = {
   relaySdp: 'relay_sdp',
   iceCandidate: 'ice_candidate',
   sessionDescription: 'description',
+  newMessage: 'new_message',
+  sendMessage: 'send_message'
 };
