@@ -23,9 +23,10 @@ export const RoomPage: FC = () => {
       </header>
       <RoomChat />
       <main className='view-content'>
-        {users.map((el: string) => {
+        {users.filter((val: string, index: number, arr: string[]) => arr[index] !== arr[index + 1]).map((el: string) => {
           return (
             <video
+              id={el}
               key={el}
               width='100%'
               height='100%'
