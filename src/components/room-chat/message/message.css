@@ -22,5 +22,17 @@
 }
 
 .message-content{
+  display: flex;
+  flex-direction: column;
+  min-width: auto;
   max-width: 221px;
+  min-height: 30px;
+  max-height: auto;
 }
+
+.message-text{
+  max-width: 221px;
+  max-height: 100%;
+  word-wrap: break-word;
+};
+

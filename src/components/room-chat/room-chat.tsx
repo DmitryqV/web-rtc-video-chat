@@ -20,16 +20,19 @@ export const RoomChat: FC<iChatRoom> = (roomId) => {
     socket.on(actions.newMessage, ({ message, author }) => {
       setMessages((prev) => [...prev, { message, author }]);
       setText('');
+      document!.getElementById('chatbox')!.scrollTop = document!.getElementById('chatbox')!.scrollHeight;
     });
   }, []);
 
   const sendMessage = (message: string) => {
-    socket.emit(actions.sendMessage, { message, author: socket.id, roomId });
+    if (message.trim() !== '') {
+      socket.emit(actions.sendMessage, { message, author: socket.id, roomId });
+    };
   };
 
   return (
     <div className='room-chat_shadow'>
-      <section className='room-chat'>
+      <section className='room-chat' id='chatbox'>
         {messages.map((element, index) => {
           return <Message key={index + element.author} text={element.message} author={element.author} />
         })}
