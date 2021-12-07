@@ -24,18 +24,22 @@ export const RoomPage: FC = () => {
       <RoomChat roomId={roomId} />
       <main className='view-content'>
         {users.filter((val: string, index: number, arr: string[]) => arr[index] !== arr[index + 1]).map((el: string) => {
+          console.log(el);
           return (
-            <video
-              id={el}
-              key={el}
-              width='100%'
-              height='100%'
-              autoPlay
-              playsInline
-              muted={el === 'localhost'}
-              className='user-video'
-              ref={(inst) => provideMedia(el, inst)}
-            />
+            <div id={el} key={el} className='user-video'>
+              <video
+                width='100%'
+                height='100%'
+                autoPlay
+                playsInline
+                className='user-screencast'
+                muted={el === 'localhost'}
+                ref={(inst) => provideMedia(el, inst)}
+              />
+              <span className='user-video_titel'>
+                {el === 'localhost' ? socket.id + ' (ME)' : el}
+              </span>
+            </div>
           );
         })}
       </main>
