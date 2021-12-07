@@ -5,7 +5,7 @@ import { Link, useParams } from 'react-router-dom';
 import { actions } from '@socket/socket-events';
 import { socket } from '@socket/socket';
 import { IRoomParam, IWebRTC } from './room.interfaces';
-import './room.css';
+import './room.styles.css';
 
 export const RoomPage: FC = () => {
   const { id: roomId } = useParams<IRoomParam>();
