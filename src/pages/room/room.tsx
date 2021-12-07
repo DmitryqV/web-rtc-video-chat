@@ -1,11 +1,11 @@
 import React, { FC } from 'react';
+import './room.css';
 import { webRTC } from '@services/webrtc';
 import { RoomChat } from '@components/room-chat/room-chat';
 import { Link, useParams } from 'react-router-dom';
 import { actions } from '@socket/socket-events';
 import { socket } from '@socket/socket';
 import { IRoomParam, IWebRTC } from './room.interfaces';
-import './room.styles.css';
 
 export const RoomPage: FC = () => {
   const { id: roomId } = useParams<IRoomParam>();
