@@ -24,7 +24,6 @@ export const RoomPage: FC = () => {
       <RoomChat roomId={roomId} />
       <main className='view-content'>
         {users.filter((val: string, index: number, arr: string[]) => arr[index] !== arr[index + 1]).map((el: string) => {
-          console.log(el);
           return (
             <div id={el} key={el} className='user-video'>
               <video
