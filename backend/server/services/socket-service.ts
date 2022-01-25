@@ -51,6 +51,7 @@ export const socketService = (server: Server) => {
       });
 
       socket.join(roomID);
+      shareRooms();
       logger.info(`the user: ${socket.id} has join the room: ${roomID}`);
     });
 
@@ -71,7 +72,7 @@ export const socketService = (server: Server) => {
     });
 
     socket.on(actions.sendMessage, ({ message, author, roomId }: any) => {
-      Array.from<string>(io.sockets.adapter.rooms.get(roomId.roomId)).forEach((clientID: string) => {
+      Array.from<string>(io.sockets.adapter.rooms.get(roomId.roomId) || []).forEach((clientID: string) => {
         io.to(clientID).emit(actions.newMessage, {
           message, author
         });

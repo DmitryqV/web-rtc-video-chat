@@ -16,12 +16,14 @@ interface iChatRoom {
 export const RoomChat: FC<iChatRoom> = (roomId) => {
   const [messages, setMessages] = useState<iMessage[]>([]);
   const [text, setText] = useState<string>('');
+
   useEffect(() => {
     socket.on(actions.newMessage, ({ message, author }) => {
       setMessages((prev) => [...prev, { message, author }]);
       setText('');
       document!.getElementById('chatbox')!.scrollTop = document!.getElementById('chatbox')!.scrollHeight;
     });
+    socket.emit(actions.sendMessage, { message: `@all, new user has joined the room. ${socket.id}, welcome!`, author: 'Application', roomId });
   }, []);
 
   const sendMessage = (message: string) => {
